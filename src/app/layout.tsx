@@ -120,7 +120,6 @@ const organizationSchema = {
       email: "hablemos@automatizatuempresa.com",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "",
         addressLocality: "Gijón",
         addressRegion: "Asturias",
         addressCountry: "ES",
