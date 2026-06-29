@@ -232,8 +232,8 @@ export default function Home() {
                   <path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </Link>
-              <a href="mailto:hola@automatizatuempresa.com" className="btn btn-secondary">
-                hola@automatizatuempresa.com
+              <a href="mailto:hablemos@automatizatuempresa.com" className="btn btn-secondary">
+                hablemos@automatizatuempresa.com
               </a>
             </div>
           </div>
