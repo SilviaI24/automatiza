@@ -593,6 +593,7 @@ td:first-child{font-weight:500;color:var(--ink);width:32%}
   .caso-home-solucion{padding-left:0}
   .caso-home{padding:32px}
   .case-grid,.faq-grid{grid-template-columns:1fr;gap:48px}
+  .faq .sticky-info{position:static}
   .svc-head{grid-template-columns:1fr;gap:24px}
   .feat-grid,.stat-row{grid-template-columns:1fr;gap:16px}
   .svc-grid-asym,.svc-grid-sym,.svc-grid-2{grid-template-columns:1fr}
