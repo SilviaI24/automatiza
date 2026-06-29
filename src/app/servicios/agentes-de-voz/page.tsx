@@ -103,7 +103,7 @@ export default function AgentesDeVoz() {
         {/* QUÉ PUEDE HACER + DEMO */}
         <section className="svc-section dark">
           <div className="wrap">
-            <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "64px", alignItems: "start" }}>
+            <div className="svc-grid-asym">
               <div className="conv-mock">
                 <div className="conv-head">
                   <div className="ava">A</div>
@@ -186,7 +186,7 @@ export default function AgentesDeVoz() {
         <section className="svc-section" style={{ padding: "64px 0" }}>
           <div className="wrap">
             <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "32px" }}>Conecta con el resto<br />de tu <span className="serif">operación</span>.</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+            <div className="svc-grid-2">
               <div style={{ padding: "28px", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)" }}>
                 <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "12px" }}>CRM Inteligente</div>
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Cada conversación del agente enriquece automáticamente tu CRM: lead scoring, historial y seguimiento sin intervención manual.</p>

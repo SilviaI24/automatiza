@@ -111,7 +111,7 @@ export default function CrmInteligente() {
               <h2>Qué incluye<br />el <span className="serif">servicio</span>.</h2>
               <p className="desc">Un CRM sin IA es un archivo. Con IA, es un sistema que trabaja por tu equipo comercial las 24 horas.</p>
             </div>
-            <div className="feat-grid" style={{ gridTemplateColumns: "repeat(3,1fr)" }}>
+            <div className="feat-grid">
               {features.map((item) => (
                 <div key={item.t} className="feat">
                   <div className="ico">
@@ -170,7 +170,7 @@ export default function CrmInteligente() {
         <section className="svc-section" style={{ padding: "64px 0" }}>
           <div className="wrap">
             <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "32px" }}>Aliméntalo con agentes<br />que <span className="serif">cualifican</span>.</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+            <div className="svc-grid-2">
               <div style={{ padding: "28px", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)" }}>
                 <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "12px" }}>Agentes conversacionales y de voz</div>
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Un agente que atiende a tus leads por WhatsApp o teléfono y alimenta el CRM automáticamente con cada interacción.</p>

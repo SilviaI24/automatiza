@@ -75,7 +75,7 @@ export default function Servicios() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "48px", alignItems: "start" }}>
+            <div className="svc-grid-sym">
               <div style={{ background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)", padding: "40px" }}>
                 <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "24px" }}>Entregable de auditoría</div>
                 {[
@@ -142,7 +142,7 @@ export default function Servicios() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "start" }}>
+            <div className="svc-grid-sym">
               <div>
                 <h3 style={{ fontSize: "28px", marginBottom: "18px" }}>Casos de uso típicos</h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
@@ -248,7 +248,7 @@ export default function Servicios() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "start" }}>
+            <div className="svc-grid-sym">
               <div className="arch">
                 <div className="arch-label">Capa de entrada</div>
                 <div className="arch-row">

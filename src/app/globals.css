@@ -570,6 +570,11 @@ td:first-child{font-weight:500;color:var(--ink);width:32%}
 .side-note-icon{font-size:20px;flex-shrink:0;line-height:1;margin-top:2px}
 .side-note p{font-size:14px;color:var(--ink-2);line-height:1.55}
 
+/* Responsive grid utilities — service pages */
+.svc-grid-asym{display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:start}
+.svc-grid-sym{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.svc-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+
 /* ======================== RESPONSIVE ======================== */
 /* Responsive shared */
 @media (max-width:1024px){
@@ -590,6 +595,10 @@ td:first-child{font-weight:500;color:var(--ink);width:32%}
   .case-grid,.faq-grid{grid-template-columns:1fr;gap:48px}
   .svc-head{grid-template-columns:1fr;gap:24px}
   .feat-grid,.stat-row{grid-template-columns:1fr;gap:16px}
+  .svc-grid-asym,.svc-grid-sym,.svc-grid-2{grid-template-columns:1fr}
+  .svc-grid-asym{gap:40px}
+  .svc-grid-sym{gap:32px}
+  .svc-grid-2{gap:20px}
   .case-card,.case-card.alt{grid-template-columns:1fr}
   .case-card.alt .case-vis{order:0}
   .num-grid{grid-template-columns:1fr 1fr}
