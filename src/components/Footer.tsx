@@ -16,9 +16,9 @@ export default function Footer() {
           <div>
             <p className="foot-label">Soluciones</p>
             <ul>
-              <li><Link href="/servicios#agentes">Agentes conversacionales y de voz</Link></li>
-              <li><Link href="/servicios#automatizacion">Automatización de flujos</Link></li>
-              <li><Link href="/servicios#crm">CRM inteligente</Link></li>
+              <li><Link href="/servicios/agentes-de-voz">Agentes conversacionales y de voz</Link></li>
+              <li><Link href="/servicios/automatizacion-low-code">Automatización de flujos</Link></li>
+              <li><Link href="/servicios/crm-inteligente">CRM inteligente</Link></li>
               <li><Link href="/servicios#agentico">Sistemas a medida</Link></li>
             </ul>
           </div>
