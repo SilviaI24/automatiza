@@ -14,7 +14,7 @@ export default function Footer() {
             <p>Diseñamos agentes IA y sistemas de automatización a medida para empresas que quieren operar con menos fricción. Trabajamos desde Gijón con clientes de toda España.</p>
           </div>
           <div>
-            <h4>Soluciones</h4>
+            <p className="foot-label">Soluciones</p>
             <ul>
               <li><Link href="/servicios#agentes">Agentes conversacionales y de voz</Link></li>
               <li><Link href="/servicios#automatizacion">Automatización de flujos</Link></li>
@@ -23,7 +23,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Empresa</h4>
+            <p className="foot-label">Empresa</p>
             <ul>
               <li><Link href="/casos">Casos reales</Link></li>
               <li><Link href="/nosotros">Quiénes somos</Link></li>
@@ -32,7 +32,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Contacto</h4>
+            <p className="foot-label">Contacto</p>
             <ul>
               <li><a href="mailto:hablemos@automatizatuempresa.com">hablemos@automatizatuempresa.com</a></li>
               <li><a href="tel:+34653134705">+34 653 134 705</a></li>

@@ -6,16 +6,22 @@ const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 const geist = Geist({
   variable: "--font-geist",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: false,
 });
 
 const instrumentSerif = Instrument_Serif({
@@ -23,6 +29,8 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   style: ["normal", "italic"],
   weight: "400",
+  display: "swap",
+  preload: false,
 });
 
 const BASE_URL = "https://www.automatizatuempresa.com";

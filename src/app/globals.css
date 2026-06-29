@@ -100,13 +100,13 @@ section.block{padding:120px 0;position:relative}
 /* FOOTER */
 footer{background:var(--ink);color:#B8B6AE;padding:60px 0 40px;border-top:1px solid #2A2C32}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
-.foot-grid h4{font-family:"Geist";font-size:12px;text-transform:uppercase;letter-spacing:0.12em;color:#7A7873;margin-bottom:18px;font-weight:500}
+.foot-grid .foot-label{font-family:"Geist";font-size:12px;text-transform:uppercase;letter-spacing:0.12em;color:#8E8B84;margin-bottom:18px;font-weight:500}
 .foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .foot-grid a{font-size:14px;color:#D8D5CE;transition:color .15s ease}
 .foot-grid a:hover{color:var(--accent)}
 .foot-brand .logo{color:var(--paper)}
 .foot-brand p{font-size:13px;margin-top:16px;line-height:1.5;max-width:280px}
-.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;border-top:1px solid #2A2C32;font-size:12px;color:#7A7873;flex-wrap:wrap;gap:16px}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;border-top:1px solid #2A2C32;font-size:12px;color:#8E8B84;flex-wrap:wrap;gap:16px}
 .foot-bottom .links{display:flex;gap:20px}
 .foot-bottom a:hover{color:var(--accent)}
 
@@ -141,7 +141,7 @@ footer{background:var(--ink);color:#B8B6AE;padding:60px 0 40px;border-top:1px so
 .chat-avatar{width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-family:"Bricolage Grotesque";font-weight:600;font-size:14px;position:relative;flex-shrink:0}
 .chat-avatar::after{content:"";position:absolute;bottom:-2px;right:-2px;width:11px;height:11px;border-radius:50%;background:#3CCB7F;border:2px solid var(--bg-2)}
 .chat-name{font-weight:500;font-size:14px}
-.chat-status{font-size:11px;color:var(--muted);margin-top:2px}
+.chat-status{font-size:11px;color:#555450;margin-top:2px}
 .chat-tools{margin-left:auto;display:flex;gap:6px}
 .chat-tools span{width:8px;height:8px;border-radius:50%;background:var(--line-soft)}
 .chat-body{padding:22px 20px;display:flex;flex-direction:column;gap:14px;min-height:380px;background:radial-gradient(circle at 10% 0%,rgba(255,74,28,0.04),transparent 50%),var(--paper);position:relative;overflow:hidden;overflow-y:auto}
