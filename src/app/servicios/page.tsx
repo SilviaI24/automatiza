@@ -190,66 +190,13 @@ export default function Servicios() {
                 <h2>Agentes conversacionales<br />y de voz</h2>
               </div>
               <div>
-                <p className="lede">Agentes IA que atienden, cualifican y resuelven — por chat, WhatsApp o teléfono. No siguen árboles de decisión rígidos: razonan sobre tu catálogo, tu base de conocimiento y tu CRM en tiempo real, y escalan a un humano cuando hace falta.</p>
-                <div className="channels">
-                  <span className="chip"><span className="ind"></span>Web (widget)</span>
-                  <span className="chip"><span className="ind"></span>WhatsApp Business API</span>
-                  <span className="chip"><span className="ind"></span>Instagram DM</span>
-                  <span className="chip"><span className="ind"></span>Telegram</span>
-                  <span className="chip"><span className="ind"></span>Llamadas entrantes</span>
-                  <span className="chip"><span className="ind"></span>Llamadas salientes</span>
+                <p className="lede">Agentes IA que atienden, cualifican y resuelven — por chat, WhatsApp o teléfono. No siguen árboles de decisión rígidos: razonan sobre tu catálogo, tu CRM y tu base de conocimiento en tiempo real. Resuelven hasta el 70% de los casos sin intervención humana y escalan al equipo cuando hace falta.</p>
+                <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
+                  <Link href="/servicios/agentes-de-voz" className="btn btn-primary" style={{ fontSize: "14px", padding: "10px 20px" }}>
+                    Ver en detalle →
+                  </Link>
                 </div>
               </div>
-            </div>
-
-            <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "48px", alignItems: "start" }}>
-              <div className="conv-mock">
-                <div className="conv-head">
-                  <div className="ava">A</div>
-                  <div className="meta">
-                    <div className="name">Ana · Agente IA</div>
-                    <div className="sub">Olea&amp;Co · Atención cliente</div>
-                  </div>
-                  <div className="src">WhatsApp</div>
-                </div>
-                <div className="conv-body">
-                  <div className="conv-b r">¡Hola Marta! ¿En qué te ayudo?</div>
-                  <div className="conv-b u">¿Hacéis envío a Canarias?</div>
-                  <div className="conv-b r">Sí, envíos a Canarias en 5-7 días. Los pedidos &gt;60€ van con gastos incluidos. ¿Necesitas algo concreto?</div>
-                  <div className="conv-b u">Busco las botas Olea modelo 2024 en talla 39</div>
-                  <div className="conv-b r">Las tengo en stock en marrón y negro. ¿Te paso enlace de compra o prefieres reservar?</div>
-                  <span className="conv-tag">Consultado catálogo en tiempo real</span>
-                  <span className="conv-tag">Contacto registrado en CRM</span>
-                </div>
-              </div>
-
-              <div>
-                <h3 style={{ fontSize: "28px", marginBottom: "18px", color: "var(--paper)" }}>Qué puede hacer el agente</h3>
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "28px" }}>
-                  {[
-                    { n: "1", t: "Conoce tu negocio", d: "entrenado sobre tu documentación, catálogo y políticas" },
-                    { n: "2", t: "Ejecuta acciones", d: "consulta stock, crea tickets, agenda citas, enriquece CRM" },
-                    { n: "3", t: "Handover inteligente", d: "pasa a un humano con contexto cuando hace falta" },
-                    { n: "4", t: "Habla como tu marca", d: "tono ajustado a tu voz, no genérico" },
-                  ].map((item) => (
-                    <div key={item.n} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                      <div style={{ width: "24px", height: "24px", borderRadius: "6px", background: "var(--mint)", display: "grid", placeItems: "center", color: "#1B4332", fontSize: "12px", fontWeight: "600", flexShrink: 0 }}>{item.n}</div>
-                      <div style={{ fontSize: "14px", color: "#D8D5CE", lineHeight: "1.5" }}><strong style={{ color: "var(--paper)" }}>{item.t}</strong> · {item.d}</div>
-                    </div>
-                  ))}
-                </div>
-
-                <div style={{ marginTop: "8px", padding: "20px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "var(--r-md)", display: "flex", gap: "16px", alignItems: "flex-start" }}>
-                  <div style={{ width: "32px", height: "32px", borderRadius: "8px", background: "var(--accent)", color: "var(--accent-ink)", display: "grid", placeItems: "center", fontWeight: "700", flexShrink: 0 }}>!</div>
-                  <div style={{ fontSize: "14px", color: "#D8D5CE", lineHeight: "1.5" }}><strong style={{ color: "var(--paper)" }}>Transparencia:</strong> el agente de voz notifica siempre al inicio de la llamada que se trata de un asistente. Cumple AI Act + LSSI. La voz es natural; la transparencia es innegociable.</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="stat-row">
-              <div className="stat"><div className="v">70<span className="ac">%</span></div><div className="l">Tasa media de resolución sin escalado humano</div></div>
-              <div className="stat"><div className="v">&lt;2s</div><div className="l">Tiempo medio de primera respuesta</div></div>
-              <div className="stat"><div className="v">24/7</div><div className="l">Disponibilidad sin festivos ni guardias</div></div>
             </div>
           </div>
         </section>
@@ -263,42 +210,11 @@ export default function Servicios() {
                 <h2>CRM inteligente</h2>
               </div>
               <div>
-                <p className="lede">Configuramos sistemas CRM con capas de inteligencia artificial para que tu equipo de ventas se centre en cerrar, no en administrar datos. Cada lead cualificado, cada seguimiento automatizado, cada oportunidad priorizada.</p>
-                <div className="channels">
-                  <span className="chip"><span className="ind"></span>Lead scoring con IA</span>
-                  <span className="chip"><span className="ind"></span>Pipelines automáticos</span>
-                  <span className="chip"><span className="ind"></span>Seguimiento inteligente</span>
-                  <span className="chip"><span className="ind"></span>Forecasting</span>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "start" }}>
-              <div className="feat-grid" style={{ gridTemplateColumns: "1fr 1fr", marginTop: "0" }}>
-                {[
-                  { t: "Configuración CRM", d: "Configuramos el CRM desde cero o migramos el que ya tienes con todos los datos." },
-                  { t: "Lead scoring IA", d: "El sistema puntúa automáticamente los leads según su comportamiento y perfil ideal de cliente." },
-                  { t: "Pipelines automáticos", d: "Los leads avanzan solos por el embudo según sus acciones. Tu equipo solo interviene donde hace falta." },
-                  { t: "Seguimiento inteligente", d: "Secuencias de emails y llamadas activadas por el comportamiento del lead, no por una fecha fija." },
-                  { t: "Integraciones profundas", d: "CRM conectado con tu web, formularios, WhatsApp, email marketing, facturación y ERP." },
-                  { t: "Reporting en tiempo real", d: "Dashboards automáticos de ventas, conversión por etapa, tiempo de cierre y previsión." },
-                ].map((item) => (
-                  <div key={item.t} className="feat">
-                    <div className="ico">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M4 9h16M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
-                    </div>
-                    <h4>{item.t}</h4>
-                    <p>{item.d}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div>
-                <h3 style={{ fontSize: "28px", marginBottom: "18px" }}>¿Qué resultado puedes esperar?</h3>
-                <div className="stat-row" style={{ gridTemplateColumns: "1fr", marginTop: "0" }}>
-                  <div className="stat"><div className="v">+40<span className="ac">%</span></div><div className="l">Tasa de conversión media de leads a clientes</div></div>
-                  <div className="stat"><div className="v">−60<span className="ac">%</span></div><div className="l">Tiempo de tu equipo dedicado a tareas administrativas en CRM</div></div>
-                  <div className="stat"><div className="v">3×</div><div className="l">Más oportunidades gestionadas por comercial sin aumentar la plantilla</div></div>
+                <p className="lede">Configuramos sistemas CRM con capas de inteligencia artificial: lead scoring automático, pipelines que avanzan solos y seguimiento inteligente activado por el comportamiento del lead. Tu equipo se centra en cerrar, no en administrar datos.</p>
+                <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
+                  <Link href="/servicios/crm-inteligente" className="btn btn-primary" style={{ fontSize: "14px", padding: "10px 20px" }}>
+                    Ver en detalle →
+                  </Link>
                 </div>
               </div>
             </div>
