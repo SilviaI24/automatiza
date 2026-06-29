@@ -10,6 +10,13 @@ export const metadata: Metadata = {
     title: "Servicios de automatización con IA | Automatiza tu Empresa",
     description: "Auditoría de procesos, agentes IA, automatización low code y CRM inteligente. Todo el ciclo, desde el diagnóstico hasta la autonomía operativa.",
     url: "https://www.automatizatuempresa.com/servicios",
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Servicios de automatización con IA | Automatiza tu Empresa",
+    description: "Auditoría, agentes IA, automatización low code y CRM inteligente. Todo el ciclo, del diagnóstico a la autonomía operativa.",
+    images: ["/og.png"],
   },
   alternates: {
     canonical: "https://www.automatizatuempresa.com/servicios",

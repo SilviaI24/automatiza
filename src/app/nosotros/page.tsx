@@ -5,12 +5,19 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quiénes somos — Consultores en automatización con IA",
-  description: "Consultores en automatización con IA y marketing digital. Desde Gijón, trabajamos con empresas de toda España para automatizar su operación.",
+  title: "Quiénes somos — Agencia de automatización con IA en Asturias",
+  description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España. Conoce cómo trabajamos.",
   openGraph: {
     title: "Quiénes somos | Automatiza tu Empresa — Gijón, Asturias",
-    description: "Consultores en automatización con IA y marketing digital. Desde Gijón, trabajamos con empresas de toda España para automatizar su operación.",
+    description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España. Conoce cómo trabajamos.",
     url: "https://www.automatizatuempresa.com/nosotros",
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quiénes somos | Automatiza tu Empresa — Gijón, Asturias",
+    description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España.",
+    images: ["/og.png"],
   },
   alternates: {
     canonical: "https://www.automatizatuempresa.com/nosotros",
