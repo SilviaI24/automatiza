@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 const slots = ["Mañana (9–13h)", "Tarde (16–19h)", "Me da igual"];
-const days = ["Lunes a miércoles", "Jueves o viernes", "Cualquier día"];
 
 export default function Contacto() {
   const [sent, setSent] = useState(false);
@@ -109,8 +108,8 @@ export default function Contacto() {
                     <label>¿Qué te interesa? (puedes elegir varios)</label>
                     <div className="check-group">
                       {["Auditoría de procesos", "Automatización (low code)", "Agentes conversacionales", "Agentes de voz", "CRM inteligente", "Software a medida", "Aún no lo tengo claro"].map((opt) => (
-                        <label key={opt} className="check" onClick={() => toggleCheck(opt)}>
-                          <input type="checkbox" readOnly checked={checks.includes(opt)} />
+                        <label key={opt} className="check">
+                          <input type="checkbox" checked={checks.includes(opt)} onChange={() => toggleCheck(opt)} />
                           <span className="box"></span>
                           <span>{opt}</span>
                         </label>
@@ -125,29 +124,16 @@ export default function Contacto() {
 
                   <div className="form-row">
                     <label>¿Cuándo te va mejor para hablar? (opcional)</label>
-                    <div className="avail-grid">
-                      <div>
-                        <div className="avail-label">Días</div>
-                        <div className="avail-chips">
-                          {days.map((d) => (
-                            <button type="button" key={d} className={`avail-chip${form.day === d ? " selected" : ""}`} onClick={() => setForm({ ...form, day: form.day === d ? "" : d })}>{d}</button>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
-                        <div className="avail-label">Franja horaria</div>
-                        <div className="avail-chips">
-                          {slots.map((s) => (
-                            <button type="button" key={s} className={`avail-chip${form.slot === s ? " selected" : ""}`} onClick={() => setForm({ ...form, slot: form.slot === s ? "" : s })}>{s}</button>
-                          ))}
-                        </div>
-                      </div>
+                    <div className="avail-chips">
+                      {slots.map((s) => (
+                        <button type="button" key={s} className={`avail-chip${form.slot === s ? " selected" : ""}`} onClick={() => setForm({ ...form, slot: form.slot === s ? "" : s })}>{s}</button>
+                      ))}
                     </div>
                   </div>
 
                   <label className="consent">
                     <input type="checkbox" required checked={consent} onChange={(e) => setConsent(e.target.checked)} />
-                    <span>Acepto la <a href="#">política de privacidad</a> y el tratamiento de mis datos para contactar conmigo sobre esta solicitud.</span>
+                    <span>Acepto la <Link href="/politica-de-privacidad">política de privacidad</Link> y el tratamiento de mis datos para contactar conmigo sobre esta solicitud.</span>
                   </label>
 
                   {error && (
