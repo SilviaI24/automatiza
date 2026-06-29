@@ -28,6 +28,15 @@ export default function Servicios() {
     <>
       <Nav />
       <main>
+        {/* BREADCRUMB */}
+        <div className="wrap" style={{ paddingTop: "24px", paddingBottom: "0" }}>
+          <nav aria-label="Breadcrumb" style={{ display: "flex", gap: "8px", alignItems: "center", fontSize: "13px", color: "var(--muted)" }}>
+            <Link href="/" style={{ color: "var(--muted)" }}>Inicio</Link>
+            <span>›</span>
+            <span style={{ color: "var(--ink)" }}>Servicios</span>
+          </nav>
+        </div>
+
         {/* PAGE HERO */}
         <header className="page-hero">
           <div className="wrap">
@@ -124,6 +133,11 @@ export default function Servicios() {
                   <span className="chip"><span className="ind"></span>Notion</span>
                   <span className="chip"><span className="ind"></span>Google Workspace</span>
                   <span className="chip off"><span className="ind"></span>+200 conectores</span>
+                </div>
+                <div style={{ marginTop: "24px" }}>
+                  <Link href="/servicios/automatizacion-low-code" className="btn btn-primary" style={{ fontSize: "14px", padding: "10px 20px" }}>
+                    Ver en detalle →
+                  </Link>
                 </div>
               </div>
             </div>
