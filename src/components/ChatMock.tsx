@@ -43,9 +43,14 @@ export default function ChatMock() {
     function step() {
       if (idxRef.current >= script.length) {
         timerRef.current = setTimeout(() => {
-          body!.innerHTML = "";
-          idxRef.current = 0;
-          step();
+          body!.style.transition = "opacity .4s ease";
+          body!.style.opacity = "0";
+          timerRef.current = setTimeout(() => {
+            body!.innerHTML = "";
+            body!.style.opacity = "1";
+            idxRef.current = 0;
+            step();
+          }, 420);
         }, 3500);
         return;
       }
