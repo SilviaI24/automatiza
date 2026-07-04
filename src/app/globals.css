@@ -278,7 +278,7 @@ footer{background:var(--ink);color:#A8C4B0;padding:60px 0 40px;border-top:1px so
 .metric .v .down{color:var(--accent)}
 .metric .lbl{font-size:13px;color:var(--ink-2);text-align:right;max-width:160px;line-height:1.4}
 .case-text h2{font-size:clamp(36px,4.5vw,56px);margin-bottom:24px}
-.case-text .quote{font-family:"Instrument Serif";font-style:italic;font-size:24px;line-height:1.35;color:var(--ink);margin-top:28px;padding-left:20px;border-left:2px solid var(--accent)}
+.case-text .quote{font-family:"Bricolage Grotesque";font-style:normal;font-weight:600;font-size:22px;line-height:1.35;color:var(--ink);margin-top:28px;padding-left:20px;border-left:3px solid var(--accent)}
 .case-author{display:flex;align-items:center;gap:12px;margin-top:24px}
 .case-author .ava{width:44px;height:44px;border-radius:50%;background:var(--ink-2);color:var(--paper);display:grid;place-items:center;font-family:"Bricolage Grotesque";font-weight:500;flex-shrink:0}
 .case-author .who{font-size:14px}
@@ -288,7 +288,7 @@ footer{background:var(--ink);color:#A8C4B0;padding:60px 0 40px;border-top:1px so
 /* TESTIMONIOS */
 .testi-strip{padding:60px 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--bg-2);overflow:hidden}
 .testi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
-.testi{font-family:"Instrument Serif";font-style:italic;font-size:20px;line-height:1.35;color:var(--ink)}
+.testi{font-family:"Bricolage Grotesque";font-style:normal;font-weight:600;font-size:18px;line-height:1.4;color:var(--ink)}
 .testi-foot{display:flex;align-items:center;gap:10px;margin-top:18px;font-family:"Geist";font-style:normal;font-size:13px;color:var(--muted)}
 .testi-foot strong{color:var(--ink);font-weight:500}
 .testi-foot .dot{width:4px;height:4px;border-radius:50%;background:var(--muted);display:inline-block}
@@ -445,7 +445,7 @@ td:first-child{font-weight:500;color:var(--ink);width:32%}
 .case-card.dark .metric-mini .v{color:var(--paper)}
 .metric-mini .v sup{font-size:0.5em;color:var(--accent);font-weight:500;vertical-align:top;margin-left:2px}
 .metric-mini .l{font-size:12px;color:var(--muted);text-align:right;max-width:140px;line-height:1.3}
-.case-quote{font-family:"Instrument Serif";font-style:italic;font-size:22px;line-height:1.35;color:var(--ink);margin-top:4px;padding-left:16px;border-left:2px solid var(--accent)}
+.case-quote{font-family:"Bricolage Grotesque";font-style:normal;font-weight:600;font-size:20px;line-height:1.35;color:var(--ink);margin-top:4px;padding-left:16px;border-left:3px solid var(--accent)}
 .case-card.dark .case-quote{color:var(--paper)}
 .numbers{background:var(--ink);color:var(--paper);padding:80px 0;border-bottom:1px solid #244030}
 .numbers h2{font-size:clamp(36px,4.5vw,56px);color:var(--paper);margin-bottom:48px;max-width:20ch}
