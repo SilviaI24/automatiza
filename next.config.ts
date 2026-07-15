@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         destination: "https://www.automatizatuempresa.com/:path*",
         permanent: true,
       },
+      {
+        source: "/servicios/automatizacion-low-code",
+        destination: "/servicios/automatizacion-de-procesos",
+        permanent: true,
+      },
     ];
   },
   async headers() {

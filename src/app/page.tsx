@@ -106,7 +106,7 @@ export default function Home() {
                 <p>Atienden, cualifican y resuelven por teléfono, WhatsApp y chat — sin intervención humana en el 70-80% de los casos.</p>
                 <span className="svc-card-link">Ver servicio →</span>
               </Link>
-              <Link href="/servicios/automatizacion-low-code" className="svc-card-home">
+              <Link href="/servicios/automatizacion-de-procesos" className="svc-card-home">
                 <span className="eyebrow" style={{ marginBottom: "12px" }}>02</span>
                 <h3>Automatización de procesos low code</h3>
                 <p>Flujos automáticos 24/7 que conectan tus herramientas: leads, onboarding, facturación y reportes sin trabajo manual.</p>

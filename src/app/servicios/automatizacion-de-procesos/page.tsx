@@ -4,21 +4,21 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Automatización de procesos low code para empresas",
+  title: "Automatización de procesos para empresas",
   description:
-    "Conectamos las herramientas que ya usas y construimos flujos automáticos 24/7: leads, onboarding, facturación y reportes. Más de 200 conectores.",
-  alternates: { canonical: "https://www.automatizatuempresa.com/servicios/automatizacion-low-code" },
+    "Analizamos cómo trabaja tu empresa y construimos los flujos automáticos exactos que necesitas: leads, onboarding, facturación y reportes sin trabajo manual.",
+  alternates: { canonical: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
   openGraph: {
-    title: "Automatización de procesos low code para empresas",
+    title: "Automatización de procesos para empresas",
     description:
-      "Flujos automáticos 24/7 que conectan tus herramientas actuales. Gestión de leads, onboarding, facturación y reportes sin intervención manual.",
-    url: "https://www.automatizatuempresa.com/servicios/automatizacion-low-code",
+      "Flujos automáticos 24/7 diseñados a medida para tu operación. Leads, onboarding, facturación y reportes sin intervención manual.",
+    url: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Automatización de procesos low code para empresas",
-    description: "Flujos automáticos 24/7. Conectamos tus herramientas y eliminamos el trabajo manual repetitivo.",
+    title: "Automatización de procesos para empresas",
+    description: "Flujos automáticos 24/7 a medida. Eliminamos el trabajo manual repetitivo en tu operación.",
     images: ["/og.png"],
   },
 };
@@ -26,13 +26,13 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Automatización de procesos low code",
-  serviceType: "Automatización de flujos empresariales con low code",
+  name: "Automatización de procesos empresariales",
+  serviceType: "Automatización de flujos y procesos empresariales",
   description:
-    "Construcción de flujos automáticos que conectan CRM, email, hojas de cálculo, ERP y formularios para ejecutar tareas complejas 24/7 sin intervención humana.",
+    "Diseño y construcción de flujos automáticos que conectan las herramientas de la empresa para ejecutar tareas complejas 24/7 sin intervención humana.",
   provider: { "@id": "https://www.automatizatuempresa.com/#organization" },
   areaServed: { "@type": "Country", name: "España" },
-  url: "https://www.automatizatuempresa.com/servicios/automatizacion-low-code",
+  url: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos",
 };
 
 const breadcrumbSchema = {
@@ -41,7 +41,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.automatizatuempresa.com" },
     { "@type": "ListItem", position: 2, name: "Servicios", item: "https://www.automatizatuempresa.com/servicios" },
-    { "@type": "ListItem", position: 3, name: "Automatización low code", item: "https://www.automatizatuempresa.com/servicios/automatizacion-low-code" },
+    { "@type": "ListItem", position: 3, name: "Automatización de procesos", item: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
   ],
 };
 
@@ -52,7 +52,7 @@ const useCases = [
   { t: "→ Reportes automáticos", d: "Informe semanal de métricas del CRM, marketing y operaciones enviado al equipo directivo sin intervención manual." },
 ];
 
-export default function AutomatizacionLowCode() {
+export default function AutomatizacionDeProcesos() {
   return (
     <>
       <Nav />
@@ -64,7 +64,7 @@ export default function AutomatizacionLowCode() {
             <span>›</span>
             <Link href="/servicios" style={{ color: "var(--muted)" }}>Servicios</Link>
             <span>›</span>
-            <span style={{ color: "var(--ink)" }}>Automatización low code</span>
+            <span style={{ color: "var(--ink)" }}>Automatización de procesos</span>
           </nav>
         </div>
 
@@ -72,16 +72,15 @@ export default function AutomatizacionLowCode() {
         <header className="page-hero">
           <div className="wrap">
             <span className="eyebrow">02 / Automatización</span>
-            <h1>Automatización de<br /><span className="serif">procesos</span><br />low code.</h1>
+            <h1>Automatiza los<br /><span className="serif">procesos</span><br />de tu empresa.</h1>
             <p className="lede">
-              Conectamos las herramientas que ya usas — CRM, email, hojas de cálculo, ERP, formularios — y construimos flujos automáticos que ejecutan tareas complejas 24 horas al día, sin intervención humana y sin errores.
+              Estudiamos cómo trabaja realmente tu equipo y construimos los flujos automáticos exactos que necesitas. Conectamos las herramientas que ya usas y eliminamos el trabajo manual que consume tiempo sin añadir valor.
             </p>
             <div className="channels" style={{ marginTop: "32px" }}>
-              <span className="chip"><span className="ind"></span>Low code</span>
-              <span className="chip"><span className="ind"></span>Software a medida</span>
-              <span className="chip"><span className="ind"></span>HubSpot</span>
-              <span className="chip"><span className="ind"></span>Airtable</span>
-              <span className="chip"><span className="ind"></span>Google Workspace</span>
+              <span className="chip"><span className="ind"></span>Gestión de leads</span>
+              <span className="chip"><span className="ind"></span>Onboarding</span>
+              <span className="chip"><span className="ind"></span>Facturación</span>
+              <span className="chip"><span className="ind"></span>Reportes</span>
               <span className="chip off"><span className="ind"></span>+200 conectores</span>
             </div>
           </div>
@@ -92,7 +91,7 @@ export default function AutomatizacionLowCode() {
           <div className="wrap">
             <div className="svc-grid-asym">
               <div>
-                <h2 style={{ fontSize: "clamp(32px,4vw,48px)", marginBottom: "28px" }}>Casos de uso<br /><span className="serif">típicos.</span></h2>
+                <h2 style={{ fontSize: "clamp(32px,4vw,48px)", marginBottom: "28px" }}>Qué automatizamos<br /><span className="serif">en la práctica.</span></h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                   {useCases.map((item) => (
                     <div key={item.t} style={{ padding: "18px", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-md)" }}>

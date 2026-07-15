@@ -135,7 +135,7 @@ export default function Servicios() {
                   <span className="chip off"><span className="ind"></span>+200 conectores</span>
                 </div>
                 <div style={{ marginTop: "24px" }}>
-                  <Link href="/servicios/automatizacion-low-code" className="btn btn-primary" style={{ fontSize: "14px", padding: "10px 20px" }}>
+                  <Link href="/servicios/automatizacion-de-procesos" className="btn btn-primary" style={{ fontSize: "14px", padding: "10px 20px" }}>
                     Ver en detalle →
                   </Link>
                 </div>
