@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     template: "%s | Automatiza tu Empresa",
   },
   description:
-    "Automatizamos procesos de empresas con agentes IA, CRM inteligente y diagnóstico de operaciones a medida. Del análisis a la implementación — para empresas en España.",
+    "Automatizamos procesos con agentes IA, CRM inteligente y diagnóstico de operaciones a medida para empresas en España. Del análisis a la implementación.",
   keywords: [
     "automatización empresarial con IA",
     "agentes IA para empresas",
     "automatizar procesos empresariales",
-    "automatización low code",
+    "automatización de procesos empresariales",
     "CRM inteligente España",
     "agentes de voz empresarial",
     "automatización de procesos Asturias",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Automatización con IA para empresas | Automatiza tu Empresa",
     description:
-      "Agentes IA, automatización low code y CRM inteligente a medida para empresas. Reserva 30 min y descubre qué automatizaríamos en tu operación.",
+      "Agentes IA, automatización de procesos y CRM inteligente a medida para empresas. Reserva 30 min y descubre qué automatizaríamos en tu operación.",
     url: BASE_URL,
     siteName: "Automatiza tu Empresa",
     locale: "es_ES",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Automatización con IA para empresas | Automatiza tu Empresa",
     description:
-      "Agentes IA, automatización low code y CRM inteligente. Reserva 30 min y descubre qué automatizaríamos en tu empresa.",
+      "Agentes IA, automatización de procesos y CRM inteligente. Reserva 30 min y descubre qué automatizaríamos en tu empresa.",
     images: ["/og.png"],
   },
   alternates: {
@@ -89,6 +89,20 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/#website`,
+      url: BASE_URL,
+      name: "Automatiza tu Empresa",
+      description: "Automatización empresarial con IA para empresas en España.",
+      publisher: { "@id": `${BASE_URL}/#organization` },
+      inLanguage: "es-ES",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: { "@type": "EntryPoint", urlTemplate: `${BASE_URL}/servicios` },
+        "query-input": "required name=search_term_string",
+      },
+    },
     {
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,
@@ -101,12 +115,12 @@ const organizationSchema = {
       email: "hablemos@automatizatuempresa.com",
       areaServed: "ES",
       description:
-        "Automatización empresarial con IA: agentes de voz, agentes conversacionales, automatización low code y CRM inteligente para empresas en España.",
+        "Automatización empresarial con IA: agentes de voz, agentes conversacionales, automatización de procesos y CRM inteligente para empresas en España.",
       knowsAbout: [
         "Automatización de procesos empresariales",
         "Agentes de inteligencia artificial",
         "CRM inteligente",
-        "Low code",
+        "Diagnóstico de operaciones",
         "Customer journey",
       ],
     },
@@ -140,8 +154,8 @@ const organizationSchema = {
         "@type": "OfferCatalog",
         name: "Servicios de automatización con IA",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Auditoría de procesos" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatización low code" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Diagnóstico de procesos" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatización de procesos" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Agentes conversacionales y de voz" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "CRM inteligente" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Software a medida" } },

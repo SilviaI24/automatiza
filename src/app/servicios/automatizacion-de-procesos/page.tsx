@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Automatización de procesos para empresas",
   description:
-    "Analizamos cómo trabaja tu empresa y construimos los flujos automáticos exactos que necesitas: leads, onboarding, facturación y reportes sin trabajo manual.",
+    "Analizamos cómo trabaja tu empresa y construimos flujos automáticos exactos: leads, onboarding, facturación y reportes sin trabajo manual.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
   openGraph: {
     title: "Automatización de procesos para empresas",
@@ -43,6 +43,35 @@ const breadcrumbSchema = {
     { "@type": "ListItem", position: 2, name: "Servicios", item: "https://www.automatizatuempresa.com/servicios" },
     { "@type": "ListItem", position: 3, name: "Automatización de procesos", item: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
   ],
+};
+
+const faqs = [
+  {
+    q: "¿Qué es automatizar procesos en una empresa?",
+    a: "Automatizar procesos empresariales significa usar software para ejecutar tareas repetitivas sin intervención humana: clasificar leads, enviar notificaciones, actualizar registros, generar facturas o enviar reportes. La empresa sigue el mismo proceso, pero lo realiza un sistema en lugar de una persona.",
+  },
+  {
+    q: "¿Qué procesos son los más habituales de automatizar?",
+    a: "Los más frecuentes son: gestión de leads entrantes, onboarding de nuevos clientes, seguimiento comercial, facturación y cobros, y reportes periódicos. Prácticamente cualquier proceso que siga reglas fijas y se repita con regularidad es candidato a automatizarse.",
+  },
+  {
+    q: "¿Necesito cambiar mis herramientas actuales?",
+    a: "No. Conectamos las herramientas que ya usas — CRM, email, hojas de cálculo, ERP, formularios — y construimos los flujos encima. Menos de lo esperado cambia en tu operación diaria; lo que cambia es quién ejecuta el trabajo.",
+  },
+  {
+    q: "¿Cuánto tarda en estar en producción?",
+    a: "Depende del alcance. Un flujo concreto puede estar funcionando en días. Proyectos más completos con varias integraciones requieren más iteraciones. En todos los casos validamos resultados desde el primer despliegue.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
 };
 
 const useCases = [
@@ -85,6 +114,18 @@ export default function AutomatizacionDeProcesos() {
             </div>
           </div>
         </header>
+
+        {/* QUÉ ES AUTOMATIZAR PROCESOS — definición GEO */}
+        <section className="svc-section" style={{ paddingBottom: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es automatizar procesos en una empresa?</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                Automatizar procesos empresariales consiste en usar software para ejecutar tareas repetitivas sin intervención humana: clasificar leads, enviar notificaciones, actualizar registros, generar facturas o enviar reportes periódicos. La empresa sigue el mismo flujo de trabajo, pero lo realiza un sistema en lugar de una persona — 24 horas al día, sin errores y sin depender de que alguien esté disponible.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* CASOS DE USO + ARQUITECTURA */}
         <section className="svc-section">
@@ -137,8 +178,31 @@ export default function AutomatizacionDeProcesos() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="svc-section faq" style={{ background: "var(--bg-2)" }}>
+          <div className="wrap">
+            <div className="faq-grid">
+              <div className="sticky-info">
+                <span className="eyebrow">Preguntas frecuentes</span>
+                <h2 style={{ marginTop: "20px" }}>Lo que nos<br />suelen <span className="serif">preguntar.</span></h2>
+                <p style={{ marginTop: "20px", fontSize: "15px", color: "var(--ink-2)", lineHeight: "1.55" }}>
+                  ¿No encuentras tu pregunta? <Link href="/contacto" style={{ color: "var(--ink)", textDecoration: "underline" }}>Escríbenos directamente.</Link>
+                </p>
+              </div>
+              <div className="faq-list">
+                {faqs.map((faq) => (
+                  <details key={faq.q}>
+                    <summary>{faq.q}</summary>
+                    <p>{faq.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ENLACES INTERNOS */}
-        <section className="svc-section" style={{ padding: "64px 0", background: "var(--bg-2)" }}>
+        <section className="svc-section" style={{ padding: "64px 0" }}>
           <div className="wrap">
             <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "32px" }}>Completa tu<br /><span className="serif">stack de automatización</span>.</h2>
             <div className="svc-grid-2">
@@ -184,6 +248,7 @@ export default function AutomatizacionDeProcesos() {
       <Footer />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );
 }

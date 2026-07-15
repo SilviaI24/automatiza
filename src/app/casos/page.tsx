@@ -11,8 +11,9 @@ const cases = [
     detail: "3 personas en atención telefónica",
     dark: false,
     problema: "El equipo dedicaba la mayor parte de su jornada a atender llamadas entrantes — consultas rutinarias, incidencias repetidas, gestiones que no requerían criterio humano. Las urgencias reales se perdían entre el ruido. No había visibilidad sobre qué comunidades concentraban más actividad ni qué tipos de incidencia eran más frecuentes.",
-    solucion: "Tras la auditoría, construimos agentes de voz y WhatsApp integrados con su CRM. El sistema atiende el 100% de las llamadas, clasifica cada contacto por tipo y urgencia, y escala al equipo solo cuando hace falta criterio real. Las urgencias se gestionan sin demora. El equipo tiene por primera vez visibilidad completa sobre el estado de cada comunidad y los patrones de incidencia.",
+    solucion: "Tras el diagnóstico, construimos agentes de voz y WhatsApp integrados con su CRM. El sistema atiende el 100% de las llamadas, clasifica cada contacto por tipo y urgencia, y escala al equipo solo cuando hace falta criterio real. Las urgencias se gestionan sin demora. El equipo tiene por primera vez visibilidad completa sobre el estado de cada comunidad y los patrones de incidencia.",
     tags: ["Agente de voz", "WhatsApp", "CRM inteligente"],
+    service: "/servicios/agentes-de-voz",
   },
   {
     id: "inmobiliaria",
@@ -22,6 +23,7 @@ const cases = [
     problema: "El equipo comercial dedicaba una parte considerable de su tiempo a tareas que no requerían su criterio: responder consultas repetidas, actualizar registros, hacer seguimiento manual de contactos sin cualificar. El resultado era inevitable — menos tiempo para lo que realmente importa: acompañar al cliente en una decisión de alta implicación personal y económica.",
     solucion: "Construimos agentes de IA y un CRM inteligente que absorbe la gestión operativa. El sistema cualifica, prioriza y hace seguimiento de forma automática. El equipo comercial ahora dedica su tiempo a lo que ningún sistema puede reemplazar: construir confianza y personalizar la experiencia de cada cliente.",
     tags: ["Agentes conversacionales", "CRM inteligente", "Lead scoring"],
+    service: "/servicios/crm-inteligente",
   },
   {
     id: "legal",
@@ -31,6 +33,7 @@ const cases = [
     problema: "Cada consulta entrante requería tiempo del equipo para valorarla, presupuestarla y responderla — independientemente de si el caso tenía encaje real con la especialidad del bufete. El equipo jurídico invertía tiempo en filtrar, informar y presupuestar antes de poder dedicarse a lo esencial: resolver casos.",
     solucion: "Diseñamos un sistema de filtrado y scoring que evalúa automáticamente cada consulta entrante. El sistema identifica qué casos tienen encaje con el bufete, qué información puede resolverse de forma automatizada y qué consultas necesitan atención directa del equipo. Los abogados ahora se dedican a ejercer — no a gestionar el embudo de entrada.",
     tags: ["Filtrado automático", "Scoring de consultas", "Agente conversacional"],
+    service: "/servicios/agentes-de-voz",
   },
 ];
 
@@ -52,7 +55,7 @@ export default function Casos() {
         <header className="page-hero">
           <div className="wrap">
             <span className="eyebrow">Casos · Proyectos reales</span>
-            <h1>Casos reales de<br />automatización <span className="serif">con IA</span><br />en empresa.</h1>
+            <h1>Casos reales de<br />automatización <span className="serif">con IA</span><br />en empresas.</h1>
             <p className="lede">
               Tres casos reales de automatización con IA en sectores distintos: administración de fincas, inmobiliaria y bufetes. El mismo patrón: un equipo saturado de gestión, un sistema que lo absorbe, y tiempo de vuelta para lo que importa.
             </p>
@@ -91,9 +94,16 @@ export default function Casos() {
                     <div className="caso-home-tags">
                       {c.tags.map((t) => <span key={t}>{t}</span>)}
                     </div>
-                    <Link href="/contacto" className="caso-cta-link">
-                      Hablemos de tu caso →
-                    </Link>
+                    <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                      {c.service && (
+                        <Link href={c.service} className="caso-cta-link">
+                          Ver servicio →
+                        </Link>
+                      )}
+                      <Link href="/contacto" className="caso-cta-link">
+                        Hablemos de tu caso →
+                      </Link>
+                    </div>
                   </div>
                 </article>
               ))}

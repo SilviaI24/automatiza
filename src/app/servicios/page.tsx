@@ -323,6 +323,36 @@ export default function Servicios() {
         </section>
       </main>
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.automatizatuempresa.com" },
+              { "@type": "ListItem", position: 2, name: "Servicios", item: "https://www.automatizatuempresa.com/servicios" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Servicios de automatización con IA",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Diagnóstico de procesos", url: "https://www.automatizatuempresa.com/servicios#auditoria" },
+              { "@type": "ListItem", position: 2, name: "Automatización de procesos", url: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
+              { "@type": "ListItem", position: 3, name: "Agentes de voz y conversacionales", url: "https://www.automatizatuempresa.com/servicios/agentes-de-voz" },
+              { "@type": "ListItem", position: 4, name: "CRM inteligente", url: "https://www.automatizatuempresa.com/servicios/crm-inteligente" },
+              { "@type": "ListItem", position: 5, name: "Sistemas a medida", url: "https://www.automatizatuempresa.com/servicios#agentico" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

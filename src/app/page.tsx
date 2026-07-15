@@ -119,6 +119,11 @@ export default function Home() {
                 <span className="svc-card-link">Ver servicio →</span>
               </Link>
             </div>
+            <div style={{ marginTop: "32px", textAlign: "center" }}>
+              <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
+                Ver todos los servicios →
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -150,7 +155,7 @@ export default function Home() {
                     <p>El equipo dedicaba la mayor parte de su jornada a atender llamadas entrantes — consultas rutinarias, incidencias repetidas, gestiones que no requerían criterio humano. Las urgencias reales se perdían entre el ruido. No había visibilidad sobre qué comunidades concentraban más actividad ni qué tipos de incidencia eran más frecuentes.</p>
                   </div>
                   <div className="caso-home-solucion">
-                    <p>Tras la auditoría, construimos agentes de voz y WhatsApp integrados con su CRM. El sistema atiende el 100% de las llamadas, clasifica cada contacto por tipo y urgencia, y escala al equipo solo cuando hace falta criterio real. El equipo tiene por primera vez visibilidad completa sobre el estado de cada comunidad.</p>
+                    <p>Tras el diagnóstico, construimos agentes de voz y WhatsApp integrados con su CRM. El sistema atiende el 100% de las llamadas, clasifica cada contacto por tipo y urgencia, y escala al equipo solo cuando hace falta criterio real. El equipo tiene por primera vez visibilidad completa sobre el estado de cada comunidad.</p>
                   </div>
                 </div>
                 <div className="caso-home-footer">
@@ -258,6 +263,10 @@ export default function Home() {
                 <summary>¿Cómo sé si mi empresa está lista para automatizar procesos?</summary>
                 <p>Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu operación y te decimos qué se puede automatizar y cuánto vale hacerlo.</p>
               </details>
+              <details>
+                <summary>¿Cuánto cuesta automatizar procesos en una empresa?</summary>
+                <p>Depende del alcance y la complejidad de lo que automaticemos. El diagnóstico de procesos es un servicio independiente con precio cerrado — el informe y el plan de acción son tuyos. Los proyectos de automatización los presupuestamos caso a caso, siempre tras entender cómo trabaja tu empresa. En los 30 minutos iniciales te damos una estimación honesta.</p>
+              </details>
             </div>
           </div>
         </section>
@@ -340,6 +349,14 @@ export default function Home() {
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu operación y te decimos qué se puede automatizar y cuánto vale hacerlo.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿Cuánto cuesta automatizar procesos en una empresa?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Depende del alcance y la complejidad de lo que automaticemos. El diagnóstico de procesos es un servicio independiente con precio cerrado — el informe y el plan de acción son tuyos. Los proyectos de automatización los presupuestamos caso a caso, siempre tras entender cómo trabaja tu empresa. En los 30 minutos iniciales te damos una estimación honesta.",
                 },
               },
             ],

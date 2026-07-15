@@ -5,7 +5,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quiénes somos — Agencia de automatización con IA en Asturias",
+  title: "Quiénes somos — Automatización con IA en Gijón",
   description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España. Conoce cómo trabajamos.",
   openGraph: {
     title: "Quiénes somos | Automatiza tu Empresa — Gijón, Asturias",
@@ -33,7 +33,7 @@ const socios = [
   },
   {
     nombre: "Danna Andrade",
-    tags: ["Auditoría de procesos", "Optimización operativa", "CRM"],
+    tags: ["Diagnóstico de procesos", "Optimización operativa", "CRM"],
     foto: "/assets/danna.jpg",
     iniciales: "DA",
   },
@@ -129,6 +129,7 @@ export default function Nosotros() {
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
               </Link>
               <Link href="/casos" className="btn btn-secondary">Ver casos reales</Link>
+              <Link href="/servicios" className="btn btn-secondary">Ver servicios</Link>
             </div>
           </div>
         </section>

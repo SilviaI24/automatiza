@@ -20,6 +20,23 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.automatizatuempresa.com" },
+    { "@type": "ListItem", position: 2, name: "Casos reales", item: "https://www.automatizatuempresa.com/casos" },
+  ],
+};
+
 export default function CasosLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
+  );
 }

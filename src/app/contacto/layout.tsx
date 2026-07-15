@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contacto — Reserva 30 min de diagnóstico de automatización",
+  title: "Contacto — Hablemos de tu empresa",
   description: "Cuéntanos qué hace tu equipo hoy que no debería hacer mañana. 30 minutos, sin compromiso. Te decimos qué automatizaríamos primero.",
   openGraph: {
     title: "Contacto — Reserva 30 min | Automatiza tu Empresa",

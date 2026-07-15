@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agentes de voz y conversacionales con IA para empresas",
+  title: "Agentes de voz y conversacionales con IA",
   description:
     "Agentes de IA que atienden, cualifican y resuelven en teléfono, WhatsApp y chat. Hasta el 70-80% de casos resueltos sin intervención humana.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/agentes-de-voz" },
