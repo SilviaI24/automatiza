@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Bricolage_Grotesque, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -24,14 +24,6 @@ const geistMono = Geist_Mono({
   preload: false,
 });
 
-const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: "400",
-  display: "swap",
-  preload: false,
-});
 
 const BASE_URL = "https://www.automatizatuempresa.com";
 
@@ -161,7 +153,7 @@ const organizationSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${bricolage.variable} ${geist.variable} ${geistMono.variable} ${instrumentSerif.variable}`}>
+    <html lang="es" className={`${bricolage.variable} ${geist.variable} ${geistMono.variable}`}>
       <body>
         {children}
         <script
