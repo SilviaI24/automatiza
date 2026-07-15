@@ -46,7 +46,7 @@ export default function Contacto() {
           <div className="wrap">
             <span className="eyebrow">Contacto</span>
             <h1>Hablemos<br />de tu <span className="serif">operación</span>.</h1>
-            <p className="lede">Cuéntanos qué proceso te está consumiendo tiempo. En 30 minutos sales con un plan de qué automatizar primero — sin venta dura, sin propuesta de 80 páginas, sin compromiso.</p>
+            <p className="lede">Cuéntanos cómo trabaja tu equipo. Escuchamos, hacemos las preguntas que importan y te damos una primera opinión honesta sobre qué podría automatizarse — y si tiene sentido hacerlo.</p>
           </div>
         </header>
 
@@ -107,7 +107,7 @@ export default function Contacto() {
                   <div className="form-row">
                     <label>¿Qué te interesa? (puedes elegir varios)</label>
                     <div className="check-group">
-                      {["Auditoría de procesos", "Automatización (low code)", "Agentes conversacionales", "Agentes de voz", "CRM inteligente", "Software a medida", "Aún no lo tengo claro"].map((opt) => (
+                      {["Diagnóstico de procesos", "Automatización de procesos", "Agentes conversacionales", "Agentes de voz", "CRM inteligente", "Software a medida", "Aún no lo tengo claro"].map((opt) => (
                         <label key={opt} className="check">
                           <input type="checkbox" checked={checks.includes(opt)} onChange={() => toggleCheck(opt)} />
                           <span className="box"></span>

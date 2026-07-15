@@ -5,17 +5,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Servicios de automatización con IA para empresas",
-  description: "Auditoría de procesos, agentes IA, automatización low code y CRM inteligente. Todo el ciclo, desde el diagnóstico hasta la autonomía operativa.",
+  description: "Diagnóstico de procesos, agentes IA, automatización de procesos y CRM inteligente. Desde el análisis de tu operación hasta la implementación completa.",
   openGraph: {
     title: "Servicios de automatización con IA | Automatiza tu Empresa",
-    description: "Auditoría de procesos, agentes IA, automatización low code y CRM inteligente. Todo el ciclo, desde el diagnóstico hasta la autonomía operativa.",
+    description: "Diagnóstico de procesos, agentes IA, automatización de procesos y CRM inteligente. Desde el análisis de tu operación hasta la implementación completa.",
     url: "https://www.automatizatuempresa.com/servicios",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Servicios de automatización con IA | Automatiza tu Empresa",
-    description: "Auditoría, agentes IA, automatización low code y CRM inteligente. Todo el ciclo, del diagnóstico a la autonomía operativa.",
+    description: "Diagnóstico de procesos, agentes IA, automatización y CRM inteligente. Del análisis inicial a la implementación completa.",
     images: ["/og.png"],
   },
   alternates: {
@@ -43,10 +43,10 @@ export default function Servicios() {
             <span className="eyebrow">Servicios</span>
             <h1>Servicios de<br /><span className="serif">automatización</span><br />con IA.</h1>
             <p className="lede">
-              Cinco servicios para automatizar la operación de tu empresa de principio a fin: auditoría de procesos, agentes IA, automatización low code, CRM inteligente y software a medida.
+              Cinco servicios para automatizar la operación de tu empresa de principio a fin: diagnóstico de procesos, agentes IA, automatización de procesos, CRM inteligente y software a medida.
             </p>
             <div className="toc">
-              <a href="#auditoria">→ Auditoría de procesos</a>
+              <a href="#auditoria">→ Diagnóstico de procesos</a>
               <a href="#automatizacion">→ Automatización de flujos</a>
               <a href="#agentes">→ Agentes conversacionales y de voz</a>
               <a href="#crm">→ CRM inteligente</a>
@@ -61,7 +61,7 @@ export default function Servicios() {
             <div className="svc-head">
               <div>
                 <div className="label">01 / Diagnóstico</div>
-                <h2>Auditoría de procesos<br />con IA</h2>
+                <h2>Diagnóstico<br />de procesos</h2>
               </div>
               <div>
                 <p className="lede">Antes de construir nada, analizamos. Mapeamos cómo funciona realmente tu empresa — no cómo crees que funciona — y detectamos qué procesos consumen más tiempo, dónde se producen errores y cuánto vale automatizar cada uno.</p>
@@ -77,7 +77,7 @@ export default function Servicios() {
 
             <div className="svc-grid-sym">
               <div style={{ background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)", padding: "40px" }}>
-                <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "24px" }}>Entregable de auditoría</div>
+                <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "24px" }}>Entregable del diagnóstico</div>
                 {[
                   { n: "01", t: "Mapa de procesos actual", d: "Diagrama visual de cómo fluye la información y las tareas en tu empresa hoy." },
                   { n: "02", t: "Inventario de automatizables", d: "Lista priorizada de procesos que se pueden automatizar, con estimación de horas recuperadas." },
@@ -95,8 +95,8 @@ export default function Servicios() {
               </div>
 
               <div>
-                <h3 style={{ fontSize: "28px", marginBottom: "18px" }}>¿Para quién es la auditoría?</h3>
-                <p style={{ fontSize: "15px", lineHeight: "1.55", color: "var(--ink-2)", marginBottom: "24px" }}>Para cualquier empresa que sienta que sus equipos pasan demasiado tiempo en tareas que &ldquo;deberían poder automatizarse&rdquo; — pero no saben por dónde empezar ni cuánto vale hacerlo.</p>
+                <h3 style={{ fontSize: "28px", marginBottom: "18px" }}>¿Para quién es el diagnóstico?</h3>
+                <p style={{ fontSize: "15px", lineHeight: "1.55", color: "var(--ink-2)", marginBottom: "24px" }}>Para cualquier empresa que sienta que sus equipos pasan demasiado tiempo en tareas que podrían automatizarse — pero no saben por dónde empezar ni cuánto vale hacerlo.</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                   {[
                     "Empresas con procesos manuales repetitivos",
@@ -109,6 +109,11 @@ export default function Servicios() {
                       <div style={{ fontSize: "14px", lineHeight: "1.5", paddingTop: "4px" }}>{item}</div>
                     </div>
                   ))}
+                </div>
+                <div style={{ marginTop: "28px", padding: "20px", background: "var(--bg-2)", borderRadius: "var(--r-md)", borderLeft: "3px solid var(--accent)" }}>
+                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink-2)" }}>
+                    <strong style={{ color: "var(--ink)" }}>El diagnóstico es un servicio independiente.</strong> El informe y el plan de acción son tuyos — construyas la automatización con nosotros o no. También ofrecemos seguimiento mensual para equipos que quieren acompañamiento continuo sin comprometerse a un proyecto completo.
+                  </p>
                 </div>
               </div>
             </div>
@@ -124,10 +129,8 @@ export default function Servicios() {
                 <h2>Automatización<br />de flujos</h2>
               </div>
               <div>
-                <p className="lede">Conectamos las herramientas que ya usas — CRM, email, hojas de cálculo, ERP, formularios — y construimos flujos automáticos con low code o software a medida que ejecutan tareas complejas 24 horas al día, sin intervención humana y sin errores.</p>
+                <p className="lede">Conectamos las herramientas que ya usas — CRM, email, hojas de cálculo, ERP, formularios — y construimos flujos automáticos a medida que ejecutan tareas complejas 24 horas al día, sin intervención humana y sin errores.</p>
                 <div className="channels">
-                  <span className="chip"><span className="ind"></span>Low code</span>
-                  <span className="chip"><span className="ind"></span>Software a medida</span>
                   <span className="chip"><span className="ind"></span>HubSpot</span>
                   <span className="chip"><span className="ind"></span>Airtable</span>
                   <span className="chip"><span className="ind"></span>Notion</span>
@@ -244,7 +247,7 @@ export default function Servicios() {
                 <h2>Sistemas a medida.</h2>
               </div>
               <div>
-                <p className="lede">Cuando low code no llega. Diseñamos arquitecturas con varios agentes especializados que colaboran entre sí sobre tus sistemas internos — con orquestación, observabilidad y humano en el loop donde importa.</p>
+                <p className="lede">Para operaciones más complejas. Diseñamos arquitecturas con varios agentes especializados que colaboran entre sí sobre tus sistemas internos — con orquestación, observabilidad y humano en el loop donde importa.</p>
               </div>
             </div>
 
@@ -308,7 +311,7 @@ export default function Servicios() {
           <div className="wrap">
             <span className="eyebrow" style={{ color: "#B8B6AE" }}>¿No estás seguro de por dónde empezar?</span>
             <h2 style={{ marginTop: "24px" }}>Hablemos de tu<br />operación. <span className="serif">Sin venta dura.</span></h2>
-            <p>30 minutos. Te enseñamos qué automatizaríamos primero en tu caso. Salimos con un plan, una estimación, y la decisión está en tus manos.</p>
+            <p>Una conversación, sin venta dura. Nos cuentas cómo trabaja tu equipo, hacemos las preguntas correctas y te damos una primera opinión honesta. Si tiene sentido seguir, lo sabrás antes de salir.</p>
             <div className="row">
               <Link href="/contacto" className="btn btn-primary">
                 Reservar 30 minutos

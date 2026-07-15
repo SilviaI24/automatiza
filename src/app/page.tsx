@@ -14,7 +14,7 @@ export default function Home() {
           <div className="wrap hero-grid">
             <div>
               <div className="hero-badge">
-                Agentes IA · Automatización · Low code
+                Agentes IA · Automatización de procesos · CRM inteligente
               </div>
               <h1>
                 El trabajo que<br />
@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="pill">un sistema de IA.</span>
               </h1>
               <p className="hero-subhead">
-                Automatizamos los procesos de tu empresa con agentes de voz, automatizaciones low code y CRMs inteligentes — para que tu operación funcione sola y tu equipo se dedique a lo que realmente importa.
+                Automatizamos los procesos de tu empresa con agentes de voz, CRM inteligente y flujos automáticos a medida — para que tu operación funcione sola y tu equipo se dedique a lo que realmente importa.
               </p>
               <div className="hero-chips">
                 <span>Llamadas sin contestar</span>
@@ -73,7 +73,7 @@ export default function Home() {
               <div className="step">
                 <span className="n">02 — Diseñamos y construimos</span>
                 <h3>La arquitectura correcta</h3>
-                <p>Construimos con low code o software a medida según lo que necesite tu caso. Siempre integrado con las herramientas que ya tienes.</p>
+                <p>Diseñamos la solución exacta para cada caso — conectamos las herramientas que ya tienes y construimos los flujos específicos que tu operación necesita.</p>
               </div>
               <div className="step step-last">
                 <span className="n">03 — Lo dejamos rodando</span>
@@ -96,7 +96,7 @@ export default function Home() {
                 </h2>
               </div>
               <p className="desc">
-                Cada proyecto combina piezas distintas según lo que necesita tu empresa. Auditoría, diseño, construcción y mantenimiento incluidos.
+                Cada proyecto combina piezas distintas según lo que necesita tu empresa. Diagnóstico, diseño, construcción y mantenimiento incluidos.
               </p>
             </div>
             <div className="svc-cards-home">
@@ -108,7 +108,7 @@ export default function Home() {
               </Link>
               <Link href="/servicios/automatizacion-de-procesos" className="svc-card-home">
                 <span className="eyebrow" style={{ marginBottom: "12px" }}>02</span>
-                <h3>Automatización de procesos low code</h3>
+                <h3>Automatización de procesos</h3>
                 <p>Flujos automáticos 24/7 que conectan tus herramientas: leads, onboarding, facturación y reportes sin trabajo manual.</p>
                 <span className="svc-card-link">Ver servicio →</span>
               </Link>
@@ -250,6 +250,14 @@ export default function Home() {
                 <summary>¿Los agentes de IA cumplen con el RGPD y el AI Act en España?</summary>
                 <p>Sí. Infraestructura europea, retención mínima de datos, logs de auditoría y categorización de riesgo según el AI Act. Tu información no se usa para entrenamiento.</p>
               </details>
+              <details>
+                <summary>¿Qué procesos empresariales se pueden automatizar con IA?</summary>
+                <p>La mayoría de procesos repetitivos y basados en reglas: atención al cliente, gestión de leads, onboarding, facturación, seguimiento comercial y reportes. Los que requieren criterio humano complejo se complementan con IA — el sistema gestiona la parte operativa y el equipo interviene donde realmente importa.</p>
+              </details>
+              <details>
+                <summary>¿Cómo sé si mi empresa está lista para automatizar procesos?</summary>
+                <p>Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu operación y te decimos qué se puede automatizar y cuánto vale hacerlo.</p>
+              </details>
             </div>
           </div>
         </section>
@@ -316,6 +324,22 @@ export default function Home() {
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Sí. Infraestructura europea, retención mínima de datos, logs de auditoría y categorización de riesgo según el AI Act. Tu información no se usa para entrenamiento.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿Qué procesos empresariales se pueden automatizar con IA?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "La mayoría de procesos repetitivos y basados en reglas: atención al cliente, gestión de leads, onboarding, facturación, seguimiento comercial y reportes. Los que requieren criterio humano complejo se complementan con IA — el sistema gestiona la parte operativa y el equipo interviene donde realmente importa.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿Cómo sé si mi empresa está lista para automatizar procesos?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu operación y te decimos qué se puede automatizar y cuánto vale hacerlo.",
                 },
               },
             ],

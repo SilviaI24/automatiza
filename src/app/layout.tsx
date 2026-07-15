@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | Automatiza tu Empresa",
   },
   description:
-    "Agentes IA, automatización low code y CRM inteligente a medida para empresas. Reserva 30 min y descubre qué automatizaríamos en tu operación.",
+    "Automatizamos procesos de empresas con agentes IA, CRM inteligente y diagnóstico de operaciones a medida. Del análisis a la implementación — para empresas en España.",
   keywords: [
     "automatización empresarial con IA",
     "agentes IA para empresas",
