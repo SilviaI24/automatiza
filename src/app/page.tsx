@@ -84,6 +84,44 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ── SERVICIOS ─────────────────────────────────────── */}
+        <section className="block" id="servicios" style={{ background: "var(--bg-2)" }}>
+          <div className="wrap">
+            <div className="section-head">
+              <div>
+                <span className="eyebrow">Qué construimos</span>
+                <h2 style={{ marginTop: "18px" }}>
+                  Tres servicios.<br />
+                  <span className="serif">Un solo objetivo.</span>
+                </h2>
+              </div>
+              <p className="desc">
+                Cada proyecto combina piezas distintas según lo que necesita tu empresa. Auditoría, diseño, construcción y mantenimiento incluidos.
+              </p>
+            </div>
+            <div className="svc-cards-home">
+              <Link href="/servicios/agentes-de-voz" className="svc-card-home">
+                <span className="eyebrow" style={{ marginBottom: "12px" }}>01</span>
+                <h3>Agentes de voz y conversacionales</h3>
+                <p>Atienden, cualifican y resuelven por teléfono, WhatsApp y chat — sin intervención humana en el 70-80% de los casos.</p>
+                <span className="svc-card-link">Ver servicio →</span>
+              </Link>
+              <Link href="/servicios/automatizacion-low-code" className="svc-card-home">
+                <span className="eyebrow" style={{ marginBottom: "12px" }}>02</span>
+                <h3>Automatización de procesos low code</h3>
+                <p>Flujos automáticos 24/7 que conectan tus herramientas: leads, onboarding, facturación y reportes sin trabajo manual.</p>
+                <span className="svc-card-link">Ver servicio →</span>
+              </Link>
+              <Link href="/servicios/crm-inteligente" className="svc-card-home">
+                <span className="eyebrow" style={{ marginBottom: "12px" }}>03</span>
+                <h3>CRM inteligente con IA</h3>
+                <p>Lead scoring automático, pipelines que avanzan solos y seguimiento inteligente. Tu equipo cierra, no administra datos.</p>
+                <span className="svc-card-link">Ver servicio →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ── CASOS ─────────────────────────────────────────── */}
         <section className="block" id="casos" style={{ background: "var(--bg)" }}>
           <div className="wrap">

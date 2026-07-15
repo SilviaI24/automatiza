@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Automatización de procesos low code para empresas",
   description:
-    "Conectamos las herramientas que ya usas y construimos flujos automáticos 24/7 sin errores: leads, onboarding, facturación y reportes. Más de 200 conectores.",
+    "Conectamos las herramientas que ya usas y construimos flujos automáticos 24/7: leads, onboarding, facturación y reportes. Más de 200 conectores.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/automatizacion-low-code" },
   openGraph: {
     title: "Automatización de procesos low code para empresas",

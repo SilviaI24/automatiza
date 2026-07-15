@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Agentes de voz y conversacionales con IA para empresas",
   description:
-    "Agentes de IA que atienden, cualifican y resuelven por teléfono, WhatsApp y chat. Resuelven hasta el 70-80% de los casos y escalan a un humano cuando hace falta.",
+    "Agentes de IA que atienden, cualifican y resuelven en teléfono, WhatsApp y chat. Hasta el 70-80% de casos resueltos sin intervención humana.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/agentes-de-voz" },
   openGraph: {
     title: "Agentes de voz y conversacionales con IA para empresas",
@@ -64,6 +64,16 @@ const faqs = [
     a: "Depende de la complejidad. Un agente para un caso de uso concreto (atención, cualificación, agendado) puede estar en producción en pocas semanas. Sistemas más complejos con múltiples integraciones requieren más iteraciones. En todos los casos validamos resultados desde el primer despliegue.",
   },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 
 export default function AgentesDeVoz() {
   return (
@@ -229,6 +239,7 @@ export default function AgentesDeVoz() {
       <Footer />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );
 }
