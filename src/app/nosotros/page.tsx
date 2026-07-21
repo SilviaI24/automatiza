@@ -135,6 +135,19 @@ export default function Nosotros() {
         </section>
       </main>
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.automatizatuempresa.com" },
+              { "@type": "ListItem", position: 2, name: "Quiénes somos", item: "https://www.automatizatuempresa.com/nosotros" },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

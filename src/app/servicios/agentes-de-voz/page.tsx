@@ -24,6 +24,19 @@ export const metadata: Metadata = {
   },
 };
 
+const BASE = "https://www.automatizatuempresa.com";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE}/servicios/agentes-de-voz#webpage`,
+  url: `${BASE}/servicios/agentes-de-voz`,
+  name: "Agentes de voz y conversacionales con IA",
+  dateModified: "2026-07-21",
+  isPartOf: { "@id": `${BASE}/#website` },
+  breadcrumb: { "@id": `${BASE}/servicios/agentes-de-voz#breadcrumb` },
+};
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -109,6 +122,18 @@ export default function AgentesDeVoz() {
             </div>
           </div>
         </header>
+
+        {/* RESPUESTA DIRECTA GEO */}
+        <section className="svc-section" style={{ paddingBottom: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es un agente de voz con IA?</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                Un agente de voz con IA es un sistema de atención automática que mantiene conversaciones telefónicas o por WhatsApp de forma natural, sin seguir árboles de decisión rígidos. Consulta tu CRM, catálogo y base de conocimiento en tiempo real, ejecuta acciones — crear tickets, agendar citas, actualizar registros — y escala la llamada a un humano solo cuando la situación lo requiere. El resultado: hasta el 70-80% de las interacciones resueltas sin intervención del equipo.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* QUÉ PUEDE HACER + DEMO */}
         <section className="svc-section dark">
@@ -237,6 +262,7 @@ export default function AgentesDeVoz() {
         </section>
       </main>
       <Footer />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

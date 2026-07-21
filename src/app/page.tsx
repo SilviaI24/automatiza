@@ -119,9 +119,12 @@ export default function Home() {
                 <span className="svc-card-link">Ver servicio →</span>
               </Link>
             </div>
-            <div style={{ marginTop: "32px", textAlign: "center" }}>
+            <div style={{ marginTop: "32px", textAlign: "center", display: "flex", gap: "24px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 Ver todos los servicios →
+              </Link>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
+                Guía: automatización de empresas con IA →
               </Link>
             </div>
           </div>

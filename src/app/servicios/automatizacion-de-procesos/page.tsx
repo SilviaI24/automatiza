@@ -23,6 +23,19 @@ export const metadata: Metadata = {
   },
 };
 
+const BASE = "https://www.automatizatuempresa.com";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE}/servicios/automatizacion-de-procesos#webpage`,
+  url: `${BASE}/servicios/automatizacion-de-procesos`,
+  name: "Automatización de procesos para empresas",
+  dateModified: "2026-07-21",
+  isPartOf: { "@id": `${BASE}/#website` },
+  breadcrumb: { "@id": `${BASE}/servicios/automatizacion-de-procesos#breadcrumb` },
+};
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -246,6 +259,7 @@ export default function AutomatizacionDeProcesos() {
         </section>
       </main>
       <Footer />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

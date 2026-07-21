@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Servicios de automatización con IA para empresas",
+  title: "Servicios de automatización con IA",
   description: "Diagnóstico de procesos, agentes IA, automatización de procesos y CRM inteligente. Desde el análisis de tu operación hasta la implementación completa.",
   openGraph: {
     title: "Servicios de automatización con IA | Automatiza tu Empresa",
@@ -318,6 +318,7 @@ export default function Servicios() {
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
               </Link>
               <Link href="/casos" className="btn btn-secondary">Ver casos reales</Link>
+              <Link href="/automatizacion-empresas-con-ia" className="btn btn-secondary">Guía de automatización →</Link>
             </div>
           </div>
         </section>

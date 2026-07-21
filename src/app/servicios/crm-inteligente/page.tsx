@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CRM inteligente con IA: lead scoring y seguimiento",
+  title: "CRM inteligente con IA para empresas",
   description:
     "Configuramos un CRM con capas de IA: lead scoring automático, pipelines que avanzan solos y seguimiento inteligente. Tu equipo cierra, no administra datos.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/crm-inteligente" },
@@ -22,6 +22,19 @@ export const metadata: Metadata = {
       "Lead scoring, pipelines automáticos y seguimiento inteligente para que tu equipo cierre, no administre datos.",
     images: ["/og.png"],
   },
+};
+
+const BASE = "https://www.automatizatuempresa.com";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE}/servicios/crm-inteligente#webpage`,
+  url: `${BASE}/servicios/crm-inteligente`,
+  name: "CRM inteligente con IA para empresas",
+  dateModified: "2026-07-21",
+  isPartOf: { "@id": `${BASE}/#website` },
+  breadcrumb: { "@id": `${BASE}/servicios/crm-inteligente#breadcrumb` },
 };
 
 const serviceSchema = {
@@ -113,6 +126,18 @@ export default function CrmInteligente() {
             </div>
           </div>
         </header>
+
+        {/* RESPUESTA DIRECTA GEO */}
+        <section className="svc-section" style={{ paddingBottom: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es un CRM con inteligencia artificial?</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                Un CRM con IA es un sistema de gestión de clientes que prioriza y puntúa leads automáticamente según su perfil y comportamiento, avanza los pipelines sin intervención manual y activa secuencias de seguimiento en el momento exacto. A diferencia de un CRM tradicional — donde el equipo comercial introduce y consulta datos —, un CRM inteligente trabaja de forma activa: sugiere, automatiza y escala la capacidad del equipo sin aumentar la plantilla.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* QUÉ INCLUYE */}
         <section className="svc-section">
@@ -221,6 +246,7 @@ export default function CrmInteligente() {
         </section>
       </main>
       <Footer />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
