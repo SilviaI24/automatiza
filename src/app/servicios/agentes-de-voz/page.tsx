@@ -123,6 +123,18 @@ export default function AgentesDeVoz() {
           </div>
         </header>
 
+        {/* RESPUESTA DIRECTA GEO */}
+        <section className="svc-section" style={{ paddingBottom: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es un agente de voz con IA?</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                Un agente de voz con IA es un sistema de atención automática que mantiene conversaciones telefónicas o por WhatsApp de forma natural, sin seguir árboles de decisión rígidos. Consulta tu CRM, catálogo y base de conocimiento en tiempo real, ejecuta acciones — crear tickets, agendar citas, actualizar registros — y escala la llamada a un humano solo cuando la situación lo requiere. El resultado: hasta el 70-80% de las interacciones resueltas sin intervención del equipo.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* QUÉ PUEDE HACER + DEMO */}
         <section className="svc-section dark">
           <div className="wrap">

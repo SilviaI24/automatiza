@@ -127,6 +127,18 @@ export default function CrmInteligente() {
           </div>
         </header>
 
+        {/* RESPUESTA DIRECTA GEO */}
+        <section className="svc-section" style={{ paddingBottom: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es un CRM con inteligencia artificial?</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                Un CRM con IA es un sistema de gestión de clientes que prioriza y puntúa leads automáticamente según su perfil y comportamiento, avanza los pipelines sin intervención manual y activa secuencias de seguimiento en el momento exacto. A diferencia de un CRM tradicional — donde el equipo comercial introduce y consulta datos —, un CRM inteligente trabaja de forma activa: sugiere, automatiza y escala la capacidad del equipo sin aumentar la plantilla.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* QUÉ INCLUYE */}
         <section className="svc-section">
           <div className="wrap">
