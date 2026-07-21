@@ -116,6 +116,17 @@ const organizationSchema = {
       areaServed: "ES",
       description:
         "Automatización empresarial con IA: agentes de voz, agentes conversacionales, automatización de procesos y CRM inteligente para empresas en España.",
+      sameAs: [
+        "{{PENDIENTE: URL perfil LinkedIn}}",
+        "{{PENDIENTE: URL perfil Instagram o X si existe}}",
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "hablemos@automatizatuempresa.com",
+        contactType: "customer service",
+        areaServed: "ES",
+        availableLanguage: "Spanish",
+      },
       knowsAbout: [
         "Automatización de procesos empresariales",
         "Agentes de inteligencia artificial",

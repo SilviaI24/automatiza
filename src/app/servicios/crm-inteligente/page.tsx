@@ -24,6 +24,19 @@ export const metadata: Metadata = {
   },
 };
 
+const BASE = "https://www.automatizatuempresa.com";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE}/servicios/crm-inteligente#webpage`,
+  url: `${BASE}/servicios/crm-inteligente`,
+  name: "CRM inteligente con IA para empresas",
+  dateModified: "2026-07-21",
+  isPartOf: { "@id": `${BASE}/#website` },
+  breadcrumb: { "@id": `${BASE}/servicios/crm-inteligente#breadcrumb` },
+};
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -221,6 +234,7 @@ export default function CrmInteligente() {
         </section>
       </main>
       <Footer />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

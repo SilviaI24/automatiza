@@ -24,6 +24,19 @@ export const metadata: Metadata = {
   },
 };
 
+const BASE = "https://www.automatizatuempresa.com";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE}/servicios/agentes-de-voz#webpage`,
+  url: `${BASE}/servicios/agentes-de-voz`,
+  name: "Agentes de voz y conversacionales con IA",
+  dateModified: "2026-07-21",
+  isPartOf: { "@id": `${BASE}/#website` },
+  breadcrumb: { "@id": `${BASE}/servicios/agentes-de-voz#breadcrumb` },
+};
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -237,6 +250,7 @@ export default function AgentesDeVoz() {
         </section>
       </main>
       <Footer />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
