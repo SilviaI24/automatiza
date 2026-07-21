@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Servicios de automatización con IA para empresas",
+  title: "Servicios de automatización con IA",
   description: "Diagnóstico de procesos, agentes IA, automatización de procesos y CRM inteligente. Desde el análisis de tu operación hasta la implementación completa.",
   openGraph: {
     title: "Servicios de automatización con IA | Automatiza tu Empresa",

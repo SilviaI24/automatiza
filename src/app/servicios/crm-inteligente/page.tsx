@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CRM inteligente con IA: lead scoring y seguimiento",
+  title: "CRM inteligente con IA para empresas",
   description:
     "Configuramos un CRM con capas de IA: lead scoring automático, pipelines que avanzan solos y seguimiento inteligente. Tu equipo cierra, no administra datos.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/crm-inteligente" },

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Casos reales de automatización con IA en empresas",
+  title: "Casos de automatización con IA en empresas",
   description: "Administración de fincas, inmobiliaria y bufetes: casos reales de automatización con IA que liberan a los equipos de la gestión operativa.",
   openGraph: {
     title: "Casos reales de automatización con IA | Automatiza tu Empresa",
