@@ -318,6 +318,7 @@ export default function Servicios() {
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
               </Link>
               <Link href="/casos" className="btn btn-secondary">Ver casos reales</Link>
+              <Link href="/automatizacion-empresas-con-ia" className="btn btn-secondary">Guía de automatización →</Link>
             </div>
           </div>
         </section>
