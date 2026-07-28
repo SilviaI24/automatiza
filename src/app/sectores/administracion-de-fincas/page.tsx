@@ -68,10 +68,10 @@ const schemas = [
       },
       {
         "@type": "Question",
-        name: "¿Qué pasa el día 1 de mes cuando el teléfono colapsa?",
+        name: "¿Cómo gestiona el sistema el volumen constante de llamadas diarias?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "El agente atiende todas las llamadas en paralelo — sin cola de espera. Responde consultas de cuotas, envía recibos por email o WhatsApp, registra reclamaciones y solo pasa al equipo las llamadas que requieren criterio humano. El equipo empieza el día gestionando lo que importa, no contestando el teléfono.",
+          text: "El agente atiende todas las llamadas en paralelo — sin cola de espera, a cualquier hora. Responde consultas de cuotas, envía recibos por email o WhatsApp, registra reclamaciones y solo pasa al equipo las llamadas que requieren criterio humano. El equipo empieza cada día gestionando lo que importa, no contestando el teléfono.",
         },
       },
       {
@@ -89,8 +89,8 @@ const schemas = [
 const problemas = [
   {
     n: "01",
-    t: "El día 1 de mes colapsa el teléfono",
-    d: "Consultas de cuotas, reclamaciones de recibos, solicitudes de certificados. El equipo pasa la mañana entera al teléfono para tareas que no requieren su criterio.",
+    t: "El teléfono no para en todo el día",
+    d: "Consultas de cuotas, reclamaciones de recibos, solicitudes de certificados, avisos de incidencias. El equipo pasa horas al teléfono para tareas que no requieren su criterio.",
   },
   {
     n: "02",
@@ -211,14 +211,14 @@ export default function FincasPage() {
                 <span className="eyebrow">Caso real</span>
                 <h2 style={{ marginTop: "18px" }}>Cómo lo hicimos<br /><span className="serif">en la práctica</span>.</h2>
               </div>
-              <p className="desc">Una administradora con 60 comunidades y 3 personas en atención telefónica. El día 1 de cada mes, el teléfono colapsaba.</p>
+              <p className="desc">Una administradora con 60 comunidades y 3 personas en atención telefónica. El teléfono no paraba en todo el día.</p>
             </div>
             <div style={{ marginTop: "40px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
               <div style={{ padding: "32px", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)" }}>
                 <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "16px" }}>Antes</div>
                 <ul style={{ display: "flex", flexDirection: "column", gap: "10px", padding: 0, listStyle: "none" }}>
                   {[
-                    "3 personas atendiendo llamadas toda la mañana del día 1",
+                    "3 personas atendiendo llamadas a lo largo de todo el día",
                     "Urgencias reales esperando en cola junto a consultas de cuotas",
                     "Sin registro sistemático de incidencias por comunidad",
                     "Guardias de fin de semana para llamadas que podrían haberse evitado",
