@@ -85,6 +85,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BASE_URL,
   },
+  verification: {
+    google: "uFWGCA8wlu8Ee2XCZwobX62iUvefAIAny_QJBj8MUjY",
+  },
 };
 
 const organizationSchema = {
