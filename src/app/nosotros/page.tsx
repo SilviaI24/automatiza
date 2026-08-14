@@ -34,7 +34,7 @@ const socios = [
   {
     nombre: "Danna Andrade",
     tags: ["Diagnóstico de procesos", "Optimización operativa", "CRM"],
-    foto: "/assets/danna.jpg",
+    foto: "",
     iniciales: "DA",
   },
 ];
@@ -61,9 +61,11 @@ export default function Nosotros() {
               {socios.map((s) => (
                 <div key={s.nombre} className="socio-card">
                   <div className="socio-foto">
-                    {/* Sustituye el placeholder con tu foto: pon el archivo en public/assets/david.jpg o danna.jpg */}
-                    {/* <Image src={s.foto} alt={s.nombre} fill style={{ objectFit: "cover" }} /> */}
-                    <div className="socio-placeholder">{s.iniciales}</div>
+                    {s.foto ? (
+                      <Image src={s.foto} alt={s.nombre} fill style={{ objectFit: "cover", objectPosition: "top" }} />
+                    ) : (
+                      <div className="socio-placeholder">{s.iniciales}</div>
+                    )}
                   </div>
                   <div className="socio-info">
                     <h2 className="socio-nombre">{s.nombre}</h2>

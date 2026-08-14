@@ -85,6 +85,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BASE_URL,
   },
+  verification: {
+    google: "uFWGCA8wlu8Ee2XCZwobX62iUvefAIAny_QJBj8MUjY",
+  },
 };
 
 const organizationSchema = {
@@ -118,8 +121,7 @@ const organizationSchema = {
       description:
         "Automatización empresarial con IA: agentes de voz, agentes conversacionales, automatización de procesos y CRM inteligente para empresas en España.",
       sameAs: [
-        "{{PENDIENTE: URL perfil LinkedIn}}",
-        "{{PENDIENTE: URL perfil Instagram o X si existe}}",
+        "https://www.linkedin.com/company/automatiza-tuempresa/",
       ],
       contactPoint: {
         "@type": "ContactPoint",
