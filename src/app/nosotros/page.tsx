@@ -28,13 +28,13 @@ const socios = [
   {
     nombre: "David Jiménez",
     tags: ["Agentes IA", "Automatización", "Arquitectura", "Customer Journey"],
-    foto: "/assets/david.jpg",
+    foto: "/assets/David.jpeg",
     iniciales: "DJ",
   },
   {
     nombre: "Danna Andrade",
     tags: ["Diagnóstico de procesos", "Optimización operativa", "CRM"],
-    foto: "",
+    foto: "/assets/Danna.png",
     iniciales: "DA",
   },
 ];
