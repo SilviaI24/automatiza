@@ -75,6 +75,10 @@ const faqs = [
     q: "¿Cuánto tarda en estar en producción?",
     a: "Depende del alcance. Un flujo concreto puede estar funcionando en días. Proyectos más completos con varias integraciones requieren más iteraciones. En todos los casos validamos resultados desde el primer despliegue.",
   },
+  {
+    q: "¿Por dónde empezar a automatizar la empresa?",
+    a: "El punto de partida es identificar el proceso que más tiempo consume y que se repite con más frecuencia: normalmente la gestión de leads entrantes, el seguimiento comercial o la generación de informes. Automatizar ese proceso primero tiene el mayor impacto visible para el equipo y genera datos reales sobre el retorno antes de ampliar el alcance.",
+  },
 ];
 
 const faqSchema = {
@@ -237,6 +241,21 @@ export default function AutomatizacionDeProcesos() {
             <div style={{ marginTop: "32px" }}>
               <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 ← Volver a todos los servicios
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* POR DÓNDE EMPEZAR A AUTOMATIZAR */}
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Por dónde empezar a automatizar<br />los procesos de tu empresa</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                El error más común al querer automatizar procesos es empezar por lo más visible en lugar de lo más rentable. El criterio correcto es cruzar dos variables: frecuencia (¿cuántas veces al día o semana ocurre?) y tiempo (¿cuánto consume por ocurrencia?). Los procesos con alta frecuencia y alto consumo son los primeros candidatos. En la mayoría de empresas, la gestión de leads, el onboarding de clientes y la generación de informes periódicos ocupan los primeros puestos. El siguiente paso es mapear el proceso tal como ocurre hoy — no como debería ocurrir en teoría.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
               </Link>
             </div>
           </div>

@@ -81,6 +81,14 @@ const faqs = [
     q: "¿Con qué herramientas se integra?",
     a: "Con más de 200 conectores: HubSpot, Salesforce, Pipedrive, Google Workspace, Slack, WhatsApp Business API, Mailchimp, Brevo, plataformas de facturación y ERPs. Si usas algo específico, pregúntanos.",
   },
+  {
+    q: "¿Cómo se automatiza el seguimiento comercial con un CRM?",
+    a: "El seguimiento se automatiza definiendo reglas de comportamiento: si un lead abre el presupuesto, el comercial recibe un aviso. Si no responde en 72 horas, el sistema envía un email de seguimiento automático. Si vuelve a visitar la web, se reactiva la secuencia. El CRM con IA ejecuta estas reglas sin intervención manual y actualiza el estado de cada oportunidad en tiempo real.",
+  },
+  {
+    q: "¿Qué tareas del proceso de ventas se pueden automatizar?",
+    a: "Las más habituales: cualificación inicial de leads, asignación al comercial correcto, envío de propuestas, seguimiento de presupuestos sin respuesta, recordatorios de reunión, actualización del estado en el CRM tras cada interacción y generación de informes de pipeline. Las conversaciones de cierre y la construcción de confianza siguen siendo del equipo.",
+  },
 ];
 
 const faqSchema = {
@@ -224,6 +232,21 @@ export default function CrmInteligente() {
             <div style={{ marginTop: "32px" }}>
               <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 ← Volver a todos los servicios
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* AUTOMATIZAR SEGUIMIENTO */}
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Automatizar el seguimiento<br />de leads y las ventas</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Automatizar el seguimiento comercial no significa quitar al equipo de ventas del proceso — significa que nunca se les escape un lead por falta de tiempo. Un CRM con IA activa los seguimientos en el momento exacto según el comportamiento del lead: cuando abre un email, cuando vuelve a visitar la web, cuando pasa un plazo sin responder. El equipo interviene cuando el contexto lo pide, no cuando alguien se acuerda.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
               </Link>
             </div>
           </div>
