@@ -80,6 +80,22 @@ const schemas = [
           text: "Los despachos especializados se benefician especialmente porque el sistema puede configurarse con criterios muy específicos de aceptación. Un despacho solo de derecho laboral puede filtrar con precisión: tipo de caso, importe en juego, tipo de empresa demandada. Los criterios los defines tú.",
         },
       },
+      {
+        "@type": "Question",
+        name: "¿Cómo automatizar la gestión de un despacho de abogados?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El punto de partida es el filtrado de consultas: un agente de IA recoge la consulta inicial, identifica el área de práctica y evalúa si tiene encaje antes de que ningún abogado dedique tiempo. Después, el onboarding del caso — contrato, documentación, creación del expediente — se automatiza desde la aceptación. El resultado es un equipo jurídico que empieza cada caso con toda la documentación en orden, sin haber gestionado ningún trámite administrativo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué tareas de un bufete de abogados se pueden automatizar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Filtrado y cualificación de consultas entrantes, envío y seguimiento de contratos para firma digital, solicitud de documentación inicial con checklist por tipo de caso, creación de expedientes, seguimiento de presupuestos sin respuesta y recordatorios de plazos procesales no críticos. Las tareas que requieren criterio jurídico — análisis, estrategia, redacción — siguen siendo exclusivamente del abogado.",
+        },
+      },
     ],
   },
 ];
@@ -219,6 +235,20 @@ export default function BufetesPage() {
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Primera atención en web o WhatsApp: recoge la consulta inicial, identifica el área y cualifica antes de pasar al equipo jurídico.</p>
                 <Link href="/servicios/agentes-de-voz" style={{ fontSize: "14px", fontWeight: "500", color: "var(--accent)" }}>Ver servicio →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Cómo automatizar<br />un despacho de abogados</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Automatizar un despacho empieza por separar con claridad qué es trabajo jurídico y qué es gestión operativa. El trabajo jurídico — análisis de casos, estrategia procesal, redacción de escritos — requiere la titulación y la experiencia del abogado. La gestión que lo rodea — filtrar consultas, enviar contratos, recopilar documentación, hacer seguimiento de presupuestos — no requiere ninguno de los tres. Ese segundo bloque es el que se puede automatizar. Un despacho que automatiza su gestión operativa recupera horas facturables sin contratar personal administrativo adicional.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
+              </Link>
             </div>
           </div>
         </section>

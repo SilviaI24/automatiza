@@ -80,6 +80,22 @@ const schemas = [
           text: "Depende del software. Tenemos integración nativa con los principales sistemas de gestión de clínicas del mercado español. En los casos donde no hay API disponible, trabajamos con una capa intermedia que sincroniza la agenda en tiempo real. En la sesión de diagnóstico analizamos tu sistema actual y te decimos con precisión qué es posible.",
         },
       },
+      {
+        "@type": "Question",
+        name: "¿Cómo automatizar la gestión de citas en una clínica?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El sistema se conecta a la agenda de la clínica y permite al paciente pedir, confirmar o cancelar citas por web o WhatsApp en cualquier momento. Cuando se libera un hueco, el sistema contacta automáticamente a los pacientes en lista de espera. Los recordatorios 48 horas y 2 horas antes de la cita reducen las ausencias sin intervención del personal.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué procesos administrativos de una clínica se pueden automatizar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Agendado y confirmación de citas, recordatorios de pacientes, gestión de cancelaciones y lista de espera, respuesta a consultas frecuentes fuera de horario (precios, horarios, seguros, preparación de pruebas) y reportes de ocupación por especialidad. Todo ello sin acceder a información clínica del paciente — el sistema trabaja solo con agenda, datos de contacto y tipo de consulta.",
+        },
+      },
     ],
   },
 ];
@@ -219,6 +235,20 @@ export default function ClinicasPage() {
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Lista de espera automática, gestión de cancelaciones y reportes de ocupación. El ciclo completo de la cita sin intervención manual.</p>
                 <Link href="/servicios/automatizacion-de-procesos" style={{ fontSize: "14px", fontWeight: "500", color: "var(--accent)" }}>Ver servicio →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Cómo automatizar<br />una clínica o centro de salud</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Automatizar una clínica significa liberar al personal de las tareas que no requieren criterio clínico ni presencia física: gestionar la agenda, confirmar citas, recordar a los pacientes y reasignar huecos cuando hay cancelaciones. Estas tareas representan entre el 40 y el 60% de la jornada del personal administrativo en muchas clínicas, y son completamente automatizables sin ningún impacto en la calidad asistencial. El resultado es una agenda con mayor tasa de ocupación, menos no-shows y un equipo disponible para la atención directa al paciente.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
+              </Link>
             </div>
           </div>
         </section>

@@ -82,6 +82,22 @@ const schemas = [
           text: "Sí. El mismo agente opera por WhatsApp Business API, email y teléfono. Un propietario puede abrir una incidencia por WhatsApp a las 11 de la noche; el sistema la registra, confirma recepción y programa la gestión para el día siguiente — o activa el protocolo de urgencia si la situación lo requiere.",
         },
       },
+      {
+        "@type": "Question",
+        name: "¿Cómo automatizar la atención de incidencias en comunidades de propietarios?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El sistema recibe la incidencia por teléfono, WhatsApp o email, la clasifica automáticamente (urgencia real, incidencia programable o consulta administrativa) y actúa en consecuencia: escala las urgencias al técnico de guardia, registra las demás y confirma recepción al propietario. El equipo no recibe la incidencia hasta que ha sido clasificada y documentada.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué tareas de una administradora de fincas se pueden automatizar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Atención de llamadas y mensajes de propietarios, consultas de cuotas y estado de derramas, apertura y registro de incidencias, envío de recordatorios de pago, notificaciones de juntas y actas, y generación de informes de actividad por comunidad. Las decisiones que requieren criterio administrativo o jurídico — aprobación de presupuestos, mediación en conflictos — siguen siendo del administrador.",
+        },
+      },
     ],
   },
 ];
@@ -288,6 +304,20 @@ export default function FincasPage() {
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Flujos automáticos para envío de cuotas, recordatorios de pago, generación de informes y gestión de proveedores.</p>
                 <Link href="/servicios/automatizacion-de-procesos" style={{ fontSize: "14px", fontWeight: "500", color: "var(--accent)" }}>Ver servicio →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Cómo automatizar<br />la administración de fincas</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Automatizar la administración de fincas parte de un diagnóstico sencillo: la mayoría de llamadas que recibe una administradora son predecibles. Consultas de cuotas, solicitudes de certificados, avisos de incidencias menores, preguntas sobre el estado de una derrama. Ninguna requiere el criterio del administrador, pero todas consumen su tiempo o el de su equipo. Automatizar esas interacciones — con un agente de voz y WhatsApp conectado al software de gestión — libera al equipo para los problemas que sí requieren decisión: juntas de propietarios, conflictos entre vecinos, negociación con proveedores.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
+              </Link>
             </div>
           </div>
         </section>
