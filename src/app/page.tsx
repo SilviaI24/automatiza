@@ -123,6 +123,9 @@ export default function Home() {
               <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 Ver todos los servicios →
               </Link>
+              <Link href="/sectores" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
+                Automatización por sector →
+              </Link>
               <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 Guía: automatización de empresas con IA →
               </Link>
