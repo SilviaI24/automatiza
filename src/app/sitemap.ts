@@ -5,7 +5,7 @@ const base = "https://www.automatizatuempresa.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base,                                                     lastModified: "2026-08-14", changeFrequency: "weekly",  priority: 1    },
-    { url: `${base}/automatizacion-empresas-con-ia`,                 lastModified: "2026-07-21", changeFrequency: "monthly", priority: 0.9  },
+    { url: `${base}/automatizacion-empresas-con-ia`,                 lastModified: "2026-08-14", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios`,                                      lastModified: "2026-08-14", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios/agentes-de-voz`,                       lastModified: "2026-08-14", changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/servicios/crm-inteligente`,                      lastModified: "2026-08-14", changeFrequency: "monthly", priority: 0.85 },
