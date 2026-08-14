@@ -81,6 +81,22 @@ const schemas = [
           text: "El sistema los mantiene calientes de forma automática con secuencias de nurturing: alertas de nuevas propiedades según sus criterios, contenido útil sobre el proceso de compra, recordatorios periódicos. Cuando el lead vuelve a interactuar, el comercial recibe un aviso y retoma el contacto en el momento justo.",
         },
       },
+      {
+        "@type": "Question",
+        name: "¿Cómo automatizar la gestión de leads de una inmobiliaria?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Los leads de todos los portales (Idealista, Fotocasa, web propia) se centralizan automáticamente en el CRM sin copia manual. Cada lead se puntúa según presupuesto, urgencia y zona. Los más cualificados reciben respuesta inmediata del agente conversacional, que cualifica, responde preguntas sobre propiedades y agenda la visita. El comercial solo entra en escena cuando el lead está preparado.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué tareas del comercial inmobiliario se pueden automatizar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Centralización de leads de portales, respuesta inicial y cualificación, agendado de visitas, seguimiento de leads fríos con alertas de nuevas propiedades, actualización del CRM tras cada interacción y recordatorios de seguimiento. Las visitas a propiedades, la negociación y el acompañamiento en la decisión de compra siguen siendo del comercial.",
+        },
+      },
     ],
   },
 ];
@@ -220,6 +236,20 @@ export default function InmobiliariasPage() {
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Agente en web y WhatsApp que cualifica leads, responde consultas sobre propiedades y agenda visitas sin intervención del equipo.</p>
                 <Link href="/servicios/agentes-de-voz" style={{ fontSize: "14px", fontWeight: "500", color: "var(--accent)" }}>Ver servicio →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Cómo automatizar<br />una inmobiliaria</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Automatizar una inmobiliaria empieza por el punto de mayor fricción: la captación y cualificación de leads. Un lead que llega de Idealista a las 9 de la noche y no recibe respuesta hasta el día siguiente ya ha mirado otras tres opciones. Un sistema con IA responde en segundos, cualifica al lead según los criterios del equipo comercial y agenda la llamada o la visita mientras el comercial duerme. A partir de ahí, automatizar el seguimiento de los leads que no están listos todavía — con alertas de nuevas propiedades y recordatorios en el momento justo — mantiene vivo el pipeline sin trabajo manual.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
+              </Link>
             </div>
           </div>
         </section>

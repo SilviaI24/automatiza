@@ -76,6 +76,14 @@ const faqs = [
     q: "¿Cuánto tarda en estar operativo?",
     a: "Depende de la complejidad. Un agente para un caso de uso concreto (atención, cualificación, agendado) puede estar en producción en pocas semanas. Sistemas más complejos con múltiples integraciones requieren más iteraciones. En todos los casos validamos resultados desde el primer despliegue.",
   },
+  {
+    q: "¿Cómo se automatiza la atención telefónica de un negocio?",
+    a: "Para automatizar la atención telefónica se configura un agente de voz con IA entrenado sobre el negocio: servicios, precios, horarios y procedimientos. El agente atiende el 100% de las llamadas, responde las consultas repetibles y escala al equipo solo las que requieren criterio humano. La configuración incluye la integración con el CRM o sistema de gestión para que el agente pueda consultar datos en tiempo real.",
+  },
+  {
+    q: "¿Qué tipos de empresa pueden automatizar sus llamadas?",
+    a: "Cualquier empresa que reciba un volumen significativo de llamadas con patrones repetibles: clínicas, administradoras de fincas, inmobiliarias, despachos de abogados, empresas de mantenimiento, comercios con servicio al cliente. El factor clave no es el sector sino el porcentaje de llamadas que siguen patrones predecibles, que en la mayoría de empresas supera el 60%.",
+  },
 ];
 
 const faqSchema = {
@@ -240,6 +248,21 @@ export default function AgentesDeVoz() {
             <div style={{ marginTop: "32px" }}>
               <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 ← Volver a todos los servicios
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* AUTOMATIZAR ATENCIÓN TELEFÓNICA */}
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Automatizar la atención<br />telefónica de tu empresa</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Para automatizar la atención telefónica, el punto de partida es distinguir qué tipo de llamadas recibe el equipo. En la mayoría de empresas, entre el 60 y el 80% son consultas repetibles con respuestas predecibles: horarios, estado de pedidos, preguntas sobre servicios, peticiones de cita. Esas son las primeras que tiene sentido automatizar. El agente de IA asume esa carga, responde en tiempo real y deja al equipo disponible para las conversaciones que sí requieren criterio y empatía humana.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
               </Link>
             </div>
           </div>

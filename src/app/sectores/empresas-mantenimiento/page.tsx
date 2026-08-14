@@ -80,6 +80,22 @@ const schemas = [
           text: "Sí, para cualquier tipo de mantenimiento con componente de urgencias y despacho de técnicos. Lo hemos implementado en servicios de ascensores, climatización, fontanería industrial y mantenimiento de edificios. La lógica de clasificación y despacho se configura según las especificidades de cada servicio.",
         },
       },
+      {
+        "@type": "Question",
+        name: "¿Cómo automatizar la gestión de urgencias en una empresa de mantenimiento?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "El agente de voz recibe la llamada, hace las preguntas de diagnóstico necesarias para clasificar la urgencia (emergencia, urgente o programable) y actúa según el protocolo: las emergencias activan la guardia inmediatamente, las urgentes se programan para las próximas horas, las programables se gestionan en horario normal. El cliente recibe confirmación y nombre del técnico asignado de forma automática.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué procesos de una empresa de mantenimiento se pueden automatizar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Atención y clasificación de urgencias 24/7, despacho de técnicos según disponibilidad y competencia, notificaciones automáticas al cliente durante el proceso, creación y cierre de órdenes de trabajo, programación de mantenimientos preventivos según contrato y generación de informes de actividad. La decisión técnica sobre cómo resolver la avería sigue siendo del técnico.",
+        },
+      },
     ],
   },
 ];
@@ -219,6 +235,20 @@ export default function MantenimientoPage() {
                 <p style={{ fontSize: "15px", lineHeight: "1.55", marginBottom: "20px" }}>Órdenes de trabajo, programación de preventivos, facturación y reportes de actividad. Sin intervención manual en el ciclo completo.</p>
                 <Link href="/servicios/automatizacion-de-procesos" style={{ fontSize: "14px", fontWeight: "500", color: "var(--accent)" }}>Ver servicio →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="svc-section" style={{ padding: "80px 0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>Cómo automatizar una empresa<br />de mantenimiento</h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                Automatizar una empresa de mantenimiento significa resolver primero el cuello de botella más costoso: la coordinación en tiempo real de urgencias. Cuando llega una llamada de emergencia a las 2 de la madrugada, el tiempo entre la llamada, la clasificación y el despacho del técnico correcto determina la calidad del servicio y el coste de la guardia. Automatizar ese flujo — clasificación automática, asignación del técnico disponible más cercano, notificación al cliente — reduce el tiempo de respuesta de horas a minutos y elimina las guardias para llamadas que no eran urgencias reales.
+              </p>
+              <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
+                Guía completa: cómo automatizar tu empresa con IA →
+              </Link>
             </div>
           </div>
         </section>
