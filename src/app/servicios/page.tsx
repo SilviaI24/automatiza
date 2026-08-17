@@ -355,6 +355,41 @@ export default function Servicios() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "¿Para quién son los servicios de automatización con IA?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Para cualquier empresa que sienta que sus equipos pasan demasiado tiempo en tareas que podrían automatizarse. Especialmente empresas con procesos manuales repetitivos, equipos que trabajan con muchas herramientas no integradas, negocios que quieren escalar sin contratar más personal y directivos que necesitan datos para justificar la inversión en IA.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿Cuándo tiene sentido un sistema de agentes a medida?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Cuando un único agente ya no cubre el alcance, cuando hay procesos que cruzan departamentos o cuando necesitas que la IA no solo responda sino que ejecute sobre tus sistemas internos: onboarding de clientes, conciliación de facturas, gestión de incidencias o generación de informes sin intervención humana hasta la excepción.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿Por dónde empezar a automatizar mi empresa?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "El punto de partida es el diagnóstico de procesos. En 30 minutos analizamos cómo funciona tu empresa, detectamos qué procesos consumen más tiempo y cuánto vale automatizar cada uno. El informe y el plan de acción son tuyos, construyas la automatización con nosotros o no.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }
