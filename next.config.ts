@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
         destination: "/servicios/automatizacion-de-procesos",
         permanent: true,
       },
+      // Restos de WordPress antiguo — redirige a home para dejar de pasar señales WP
+      { source: "/category/:slug*", destination: "/", permanent: true },
+      { source: "/tag/:slug*", destination: "/", permanent: true },
+      { source: "/author/:slug*", destination: "/", permanent: true },
+      { source: "/wp-admin/:path*", destination: "/", permanent: true },
+      { source: "/wp-login.php", destination: "/", permanent: true },
+      { source: "/wp-content/:path*", destination: "/", permanent: true },
+      { source: "/wp-includes/:path*", destination: "/", permanent: true },
+      { source: "/?p=:id", destination: "/", permanent: true },
+      { source: "/?page_id=:id", destination: "/", permanent: true },
     ];
   },
   async headers() {
