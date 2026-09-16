@@ -115,7 +115,7 @@ export default function AgentesDeVoz() {
         {/* PAGE HERO */}
         <header className="page-hero">
           <div className="wrap">
-            <span className="eyebrow">03 / Agentes IA</span>
+            <span className="eyebrow">04 / Agentes IA</span>
             <h1>Agentes de voz y<br /><span className="serif">conversacionales</span><br />con IA.</h1>
             <p className="lede">
               No siguen árboles de decisión rígidos: razonan sobre tu catálogo, tu base de conocimiento y tu CRM en tiempo real, ejecutan acciones y escalan a un humano cuando hace falta.

@@ -179,6 +179,18 @@ export default function AutomatizacionEmpresasConIA() {
                 </div>
               ))}
             </div>
+
+            <div style={{ marginTop: "48px", padding: "28px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "var(--r-md)", maxWidth: "720px" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#B8B6AE" }}>
+                <strong style={{ color: "var(--paper)" }}>Antes del nivel 01 hay un paso previo:</strong>{" "}
+                que el equipo sepa usar las herramientas de IA en su trabajo diario. Es lo más
+                barato de todo el recorrido, lo más rápido de poner en marcha, y muchas veces
+                revela por sí solo qué procesos merecen automatizarse después.{" "}
+                <Link href="/servicios/formacion-ia-empresas" style={{ color: "var(--accent)", fontWeight: 500 }}>
+                  Ver formación en IA para empresas →
+                </Link>
+              </p>
+            </div>
           </div>
         </section>
 

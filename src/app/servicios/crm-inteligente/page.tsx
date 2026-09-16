@@ -120,7 +120,7 @@ export default function CrmInteligente() {
         {/* PAGE HERO */}
         <header className="page-hero">
           <div className="wrap">
-            <span className="eyebrow">04 / CRM</span>
+            <span className="eyebrow">05 / CRM</span>
             <h1>CRM inteligente<br /><span className="serif">con IA.</span></h1>
             <p className="lede">
               Configuramos sistemas CRM con capas de inteligencia artificial para que tu equipo de ventas se centre en cerrar, no en administrar datos. Cada lead cualificado, cada seguimiento automatizado, cada oportunidad priorizada.

@@ -117,7 +117,7 @@ export default function AutomatizacionDeProcesos() {
         {/* PAGE HERO */}
         <header className="page-hero">
           <div className="wrap">
-            <span className="eyebrow">02 / Automatización</span>
+            <span className="eyebrow">03 / Automatización</span>
             <h1>Automatiza los<br /><span className="serif">procesos</span><br />de tu empresa.</h1>
             <p className="lede">
               Estudiamos cómo trabaja realmente tu equipo y construimos los flujos automáticos exactos que necesitas. Conectamos las herramientas que ya usas y eliminamos el trabajo manual que consume tiempo sin añadir valor.

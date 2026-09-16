@@ -5,17 +5,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Servicios de automatización con IA",
-  description: "Diagnóstico de procesos, agentes IA, automatización de procesos y CRM inteligente. Desde el análisis de tu operación hasta la implementación completa.",
+  description: "Formación en IA, diagnóstico de procesos, agentes IA, automatización y CRM inteligente. Desde la formación del equipo hasta la implementación completa.",
   openGraph: {
     title: "Servicios de automatización con IA | Automatiza tu Empresa",
-    description: "Diagnóstico de procesos, agentes IA, automatización de procesos y CRM inteligente. Desde el análisis de tu operación hasta la implementación completa.",
+    description: "Formación en IA, diagnóstico de procesos, agentes IA, automatización y CRM inteligente. Desde la formación del equipo hasta la implementación completa.",
     url: "https://www.automatizatuempresa.com/servicios",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Servicios de automatización con IA | Automatiza tu Empresa",
-    description: "Diagnóstico de procesos, agentes IA, automatización y CRM inteligente. Del análisis inicial a la implementación completa.",
+    description: "Formación en IA, diagnóstico, agentes IA, automatización y CRM inteligente. De la formación del equipo a la implementación completa.",
     images: ["/og.png"],
   },
   alternates: {
@@ -43,9 +43,10 @@ export default function Servicios() {
             <span className="eyebrow">Servicios</span>
             <h1>Servicios de<br /><span className="serif">automatización</span><br />con IA.</h1>
             <p className="lede">
-              Cinco servicios para automatizar la operación de tu empresa de principio a fin: diagnóstico de procesos, agentes IA, automatización de procesos, CRM inteligente y software a medida.
+              Seis servicios para automatizar la operación de tu empresa de principio a fin: formación del equipo, diagnóstico de procesos, agentes IA, automatización de procesos, CRM inteligente y software a medida.
             </p>
             <div className="toc">
+              <a href="#formacion">→ Formación en IA</a>
               <a href="#auditoria">→ Diagnóstico de procesos</a>
               <a href="#automatizacion">→ Automatización de flujos</a>
               <a href="#agentes">→ Agentes conversacionales y de voz</a>
@@ -55,12 +56,37 @@ export default function Servicios() {
           </div>
         </header>
 
-        {/* 01 AUDITORÍA */}
+        {/* 01 FORMACIÓN */}
+        <section className="svc-section" id="formacion">
+          <div className="wrap">
+            <div className="svc-head">
+              <div>
+                <div className="label">01 / Formación</div>
+                <h2>Formación en IA<br />para tu equipo</h2>
+              </div>
+              <div>
+                <p className="lede">Taller presencial de 3 horas sobre las tareas reales del equipo. No prompts genéricos ni teoría: cada participante sale con flujos suyos ya funcionando. Suele ser el punto de entrada más sensato — y a veces el único que hace falta durante un tiempo.</p>
+                <div className="channels">
+                  <span className="chip"><span className="ind"></span>Presencial en tu oficina</span>
+                  <span className="chip"><span className="ind"></span>3 horas · 80% práctica</span>
+                  <span className="chip"><span className="ind"></span>6-12 personas</span>
+                  <span className="chip"><span className="ind"></span>Asturias y Madrid</span>
+                </div>
+                <Link href="/servicios/formacion-ia-empresas" className="btn btn-secondary" style={{ marginTop: "28px" }}>
+                  Ver formación en IA
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 02 AUDITORÍA */}
         <section className="svc-section" id="auditoria">
           <div className="wrap">
             <div className="svc-head">
               <div>
-                <div className="label">01 / Diagnóstico</div>
+                <div className="label">02 / Diagnóstico</div>
                 <h2>Diagnóstico<br />de procesos</h2>
               </div>
               <div>
@@ -125,7 +151,7 @@ export default function Servicios() {
           <div className="wrap">
             <div className="svc-head">
               <div>
-                <div className="label">02 / Automatización</div>
+                <div className="label">03 / Automatización</div>
                 <h2>Automatización<br />de flujos</h2>
               </div>
               <div>
@@ -203,7 +229,7 @@ export default function Servicios() {
           <div className="wrap">
             <div className="svc-head">
               <div>
-                <div className="label">03 / Agentes IA</div>
+                <div className="label">04 / Agentes IA</div>
                 <h2>Agentes conversacionales<br />y de voz</h2>
               </div>
               <div>
@@ -223,7 +249,7 @@ export default function Servicios() {
           <div className="wrap">
             <div className="svc-head">
               <div>
-                <div className="label">04 / CRM</div>
+                <div className="label">05 / CRM</div>
                 <h2>CRM inteligente</h2>
               </div>
               <div>
@@ -243,7 +269,7 @@ export default function Servicios() {
           <div className="wrap">
             <div className="svc-head">
               <div>
-                <div className="label">05 / Software a medida</div>
+                <div className="label">06 / Software a medida</div>
                 <h2>Sistemas a medida.</h2>
               </div>
               <div>
@@ -346,11 +372,12 @@ export default function Servicios() {
             "@type": "ItemList",
             name: "Servicios de automatización con IA",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Diagnóstico de procesos", url: "https://www.automatizatuempresa.com/servicios#auditoria" },
-              { "@type": "ListItem", position: 2, name: "Automatización de procesos", url: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
-              { "@type": "ListItem", position: 3, name: "Agentes de voz y conversacionales", url: "https://www.automatizatuempresa.com/servicios/agentes-de-voz" },
-              { "@type": "ListItem", position: 4, name: "CRM inteligente", url: "https://www.automatizatuempresa.com/servicios/crm-inteligente" },
-              { "@type": "ListItem", position: 5, name: "Sistemas a medida", url: "https://www.automatizatuempresa.com/servicios#agentico" },
+              { "@type": "ListItem", position: 1, name: "Formación en IA para empresas", url: "https://www.automatizatuempresa.com/servicios/formacion-ia-empresas" },
+              { "@type": "ListItem", position: 2, name: "Diagnóstico de procesos", url: "https://www.automatizatuempresa.com/servicios#auditoria" },
+              { "@type": "ListItem", position: 3, name: "Automatización de procesos", url: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos" },
+              { "@type": "ListItem", position: 4, name: "Agentes de voz y conversacionales", url: "https://www.automatizatuempresa.com/servicios/agentes-de-voz" },
+              { "@type": "ListItem", position: 5, name: "CRM inteligente", url: "https://www.automatizatuempresa.com/servicios/crm-inteligente" },
+              { "@type": "ListItem", position: 6, name: "Sistemas a medida", url: "https://www.automatizatuempresa.com/servicios#agentico" },
             ],
           }),
         }}
