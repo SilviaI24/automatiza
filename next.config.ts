@@ -27,8 +27,10 @@ const nextConfig: NextConfig = {
       { source: "/wp-login.php", destination: "/", permanent: true },
       { source: "/wp-content/:path*", destination: "/", permanent: true },
       { source: "/wp-includes/:path*", destination: "/", permanent: true },
-      { source: "/?p=:id", destination: "/", permanent: true },
-      { source: "/?page_id=:id", destination: "/", permanent: true },
+      // Nota: los permalinks antiguos /?p=N y /?page_id=N no necesitan regla.
+      // `source` sólo matchea el path, nunca el query string, y esas URLs ya
+      // resuelven a la home con 200; el canonical autorreferencial de la home
+      // se encarga de la canonicalización.
     ];
   },
   async headers() {
