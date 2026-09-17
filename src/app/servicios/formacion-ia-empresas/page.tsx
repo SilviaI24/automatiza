@@ -13,12 +13,12 @@ const GRUPO_MAX = 12;
 export const metadata: Metadata = {
   title: "Formación en IA para empresas",
   description:
-    "Taller presencial de 3 horas sobre las tareas reales de tu equipo. ChatGPT, Claude y herramientas de IA aplicadas al trabajo diario. Asturias y Madrid.",
+    "Taller presencial de 3 horas sobre las tareas reales de tu equipo. Desde 79 € por participante: con dos horas recuperadas a la semana se amortiza en menos de un mes. Asturias y Madrid.",
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/formacion-ia-empresas" },
   openGraph: {
     title: "Formación en IA para empresas | Automatiza tu Empresa",
     description:
-      "Taller presencial de 3 horas sobre las tareas reales de tu equipo. 80% práctica. Cada participante sale con sus propios flujos funcionando.",
+      "Noventa horas al año por persona. El taller cuesta 79 €. Tres horas presenciales sobre las tareas reales de tu equipo, 80% práctica.",
     url: "https://www.automatizatuempresa.com/servicios/formacion-ia-empresas",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
@@ -141,6 +141,10 @@ const faqs = [
   {
     q: "¿Cuánto cuesta la formación en IA para empresas?",
     a: `Desde ${PRECIO_PARTICIPANTE} por participante, para grupos de ${GRUPO_MIN} a ${GRUPO_MAX} personas. El importe incluye las entrevistas previas con el equipo, la personalización del taller sobre vuestros procesos, las tres horas de sesión y los cuatro entregables. Para grupos más pequeños o desplazamientos fuera de Asturias lo valoramos caso por caso.`,
+  },
+  {
+    q: "¿Cómo justifico la inversión ante dirección?",
+    a: `Con aritmética. Tomando un coste laboral de 18 € por hora —una cifra razonable para perfiles administrativos o comerciales en España— dos horas recuperadas a la semana equivalen a 36 € semanales por persona. Con un coste de ${PRECIO_PARTICIPANTE} por participante, el taller queda amortizado en unas dos semanas. En un año esas dos horas semanales suman unas 90 horas por persona. La estimación de dos horas es deliberadamente conservadora: son veinte minutos al día. Sustituyendo el coste por hora por el real de vuestro equipo, la cuenta sigue saliendo con cualquier cifra realista.`,
   },
 ];
 
@@ -429,9 +433,65 @@ export default function FormacionIaEmpresas() {
                 </p>
               </div>
               <Link href="/contacto" className="btn btn-accent">
-                Reservar 30 minutos
+                Ver si sale a cuenta
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
               </Link>
+            </div>
+
+            {/* LA CUENTA */}
+            <div style={{ marginTop: "24px", padding: "40px", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)" }}>
+              <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--muted)", marginBottom: "20px" }}>
+                La cuenta
+              </div>
+
+              <h3 style={{ fontSize: "clamp(28px,3.6vw,44px)", lineHeight: "1.05", marginBottom: "24px", maxWidth: "16ch" }}>
+                Noventa horas al año por persona. El taller cuesta {PRECIO_PARTICIPANTE}.
+              </h3>
+
+              <div className="svc-grid-asym" style={{ gap: "48px", alignItems: "start" }}>
+                <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                  Basta con que cada participante recupere dos horas a la semana —unos veinte
+                  minutos al día— para llegar a esa cifra. A ese ritmo el taller queda amortizado
+                  en menos de un mes. El resto del año, esas dos horas siguen ahí.
+                  <br /><br />
+                  Es una estimación deliberadamente corta: para alguien que redacta correos,
+                  prepara documentos y resume reuniones, veinte minutos diarios es el suelo, no
+                  el techo.
+                </p>
+
+                <div>
+                  {[
+                    { l: "Coste por participante", v: PRECIO_PARTICIPANTE },
+                    { l: "Tiempo recuperado", v: "2 h / semana" },
+                    { l: "Coste laboral estimado", v: "18 € / hora" },
+                    { l: "Amortización", v: "~2 semanas", destacado: true },
+                    { l: "Recuperado en un año", v: "~90 horas", destacado: true },
+                  ].map((fila) => (
+                    <div
+                      key={fila.l}
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "baseline",
+                        gap: "16px",
+                        padding: "14px 0",
+                        borderBottom: "1px solid var(--line-soft)",
+                      }}
+                    >
+                      <span style={{ fontSize: "14px", color: fila.destacado ? "var(--ink)" : "var(--ink-2)", fontWeight: fila.destacado ? 500 : 400 }}>
+                        {fila.l}
+                      </span>
+                      <span style={{ fontFamily: "'Geist Mono'", fontSize: fila.destacado ? "16px" : "14px", color: fila.destacado ? "var(--accent)" : "var(--ink)", whiteSpace: "nowrap", fontVariantNumeric: "tabular-nums" }}>
+                        {fila.v}
+                      </span>
+                    </div>
+                  ))}
+                  <p style={{ fontSize: "13px", color: "var(--muted)", lineHeight: "1.5", marginTop: "18px" }}>
+                    Sustituye el coste por hora por el de tu equipo: la cuenta sigue saliendo con
+                    cualquier cifra realista.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
