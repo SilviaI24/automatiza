@@ -3,11 +3,12 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-// ⚠️ PENDIENTE — fijar importe antes de publicar.
-// Referencia de cálculo: ~1,5 jornadas (3 h de taller + 4-6 h de preparación
-// y entrevistas previas) más desplazamiento.
-const PRECIO_DESDE = "1.200 €";
-const PRECIO_POR_PERSONA = "120 €";
+// Precio por participante con mínimo de grupo. El mínimo protege el caso de
+// grupo pequeño: por debajo de 8 el taller no cubre la preparación previa.
+// Fuera de Asturias el desplazamiento se valora aparte.
+const PRECIO_PARTICIPANTE = "79 €";
+const GRUPO_MIN = 8;
+const GRUPO_MAX = 12;
 
 export const metadata: Metadata = {
   title: "Formación en IA para empresas",
@@ -85,6 +86,15 @@ const courseSchema = {
       "@type": "Place",
       name: "Instalaciones del cliente (Asturias y Madrid)",
     },
+    maximumAttendeeCapacity: GRUPO_MAX,
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: PRECIO_PARTICIPANTE.replace(/[^\d]/g, ""),
+    description: `Precio por participante. Grupos de ${GRUPO_MIN} a ${GRUPO_MAX} personas.`,
+    availability: "https://schema.org/InStock",
+    url: URL_PAGINA,
   },
 };
 
@@ -106,7 +116,7 @@ const faqs = [
   },
   {
     q: "¿Cuántas personas pueden asistir?",
-    a: "Entre 6 y 12 participantes, siendo 8-10 el tamaño óptimo. Ponemos el máximo en 12 porque el taller es 80% práctico: cada persona trabaja sobre sus propias tareas y necesita acompañamiento individual durante los ejercicios. Por encima de ese número esa atención deja de ser posible.",
+    a: "Entre 8 y 12 participantes, siendo 8-10 el tamaño óptimo. Ponemos el máximo en 12 porque el taller es 80% práctico: cada persona trabaja sobre sus propias tareas y necesita acompañamiento individual durante los ejercicios, y por encima de ese número esa atención deja de ser posible. Si sois un equipo más pequeño, consúltanos y lo valoramos.",
   },
   {
     q: "¿Hace falta que el equipo tenga conocimientos técnicos?",
@@ -130,7 +140,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta la formación en IA para empresas?",
-    a: `El taller completo, con la preparación previa y los cuatro entregables, parte de ${PRECIO_DESDE} para grupos de hasta 10 personas — menos de ${PRECIO_POR_PERSONA} por participante. El precio es cerrado por taller e incluye las entrevistas previas, la personalización sobre vuestros procesos y el desplazamiento dentro de Asturias y Madrid.`,
+    a: `Desde ${PRECIO_PARTICIPANTE} por participante, para grupos de ${GRUPO_MIN} a ${GRUPO_MAX} personas. El importe incluye las entrevistas previas con el equipo, la personalización del taller sobre vuestros procesos, las tres horas de sesión y los cuatro entregables. Para grupos más pequeños o desplazamientos fuera de Asturias lo valoramos caso por caso.`,
   },
 ];
 
@@ -221,7 +231,7 @@ export default function FormacionIaEmpresas() {
             <div className="channels" style={{ marginTop: "32px" }}>
               <span className="chip"><span className="ind"></span>Presencial en tu oficina</span>
               <span className="chip"><span className="ind"></span>3 horas</span>
-              <span className="chip"><span className="ind"></span>6-12 personas</span>
+              <span className="chip"><span className="ind"></span>Desde 79 € por participante</span>
               <span className="chip"><span className="ind"></span>Asturias y Madrid</span>
             </div>
           </div>
@@ -406,15 +416,16 @@ export default function FormacionIaEmpresas() {
             <div style={{ marginTop: "48px", padding: "40px", background: "var(--ink)", color: "var(--paper)", borderRadius: "var(--r-lg)", display: "flex", flexWrap: "wrap", gap: "32px", alignItems: "center", justifyContent: "space-between" }}>
               <div>
                 <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.12em", color: "#A8C4B0", marginBottom: "14px" }}>
-                  Taller in-company · hasta 10 personas
+                  Taller in-company · grupos de {GRUPO_MIN} a {GRUPO_MAX}
                 </div>
                 <div style={{ fontFamily: "'Bricolage Grotesque'", fontSize: "clamp(36px,5vw,56px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1 }}>
-                  desde {PRECIO_DESDE}
+                  desde {PRECIO_PARTICIPANTE}
+                  <span style={{ fontSize: "0.4em", color: "#A8C4B0", marginLeft: "10px", letterSpacing: "-0.01em" }}>por participante</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#A8C4B0", marginTop: "12px", lineHeight: "1.5", maxWidth: "420px" }}>
-                  Menos de {PRECIO_POR_PERSONA} por participante. Incluye las entrevistas previas,
-                  la personalización sobre vuestros procesos, los cuatro entregables y el
-                  desplazamiento dentro de Asturias y Madrid.
+                <p style={{ fontSize: "14px", color: "#A8C4B0", marginTop: "14px", lineHeight: "1.5", maxWidth: "440px" }}>
+                  Incluye las entrevistas previas, la personalización sobre vuestros procesos y los
+                  cuatro entregables. Grupos menores de {GRUPO_MIN} personas o desplazamiento fuera
+                  de Asturias, consúltanos.
                 </p>
               </div>
               <Link href="/contacto" className="btn btn-accent">
