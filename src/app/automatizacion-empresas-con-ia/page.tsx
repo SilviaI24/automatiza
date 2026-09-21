@@ -42,7 +42,7 @@ const webPageSchema = {
   "@id": `${URL_PILAR}#webpage`,
   url: URL_PILAR,
   name: "Cómo automatizar una empresa con IA: guía práctica",
-  dateModified: "2026-08-14",
+  dateModified: "2026-09-21",
   isPartOf: { "@id": `${BASE}/#website` },
 };
 
