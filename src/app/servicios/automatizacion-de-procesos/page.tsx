@@ -31,7 +31,7 @@ const webPageSchema = {
   "@id": `${BASE}/servicios/automatizacion-de-procesos#webpage`,
   url: `${BASE}/servicios/automatizacion-de-procesos`,
   name: "Automatización de procesos para empresas",
-  dateModified: "2026-07-21",
+  dateModified: "2026-09-21",
   isPartOf: { "@id": `${BASE}/#website` },
   breadcrumb: { "@id": `${BASE}/servicios/automatizacion-de-procesos#breadcrumb` },
 };
@@ -238,6 +238,20 @@ export default function AutomatizacionDeProcesos() {
                 </Link>
               </div>
             </div>
+            <div style={{ marginTop: "48px", paddingTop: "40px", borderTop: "1px solid var(--line-soft)" }}>
+              <h3 style={{ fontSize: "20px", marginBottom: "10px" }}>Por sector</h3>
+              <p style={{ fontSize: "15px", lineHeight: "1.6", color: "var(--ink-2)", marginBottom: "20px", maxWidth: "620px" }}>
+                Los procesos que más tiempo consumen cambian según el sector. Estos son los que solemos automatizar:
+              </p>
+              <div className="filters" style={{ marginTop: "0" }}>
+                <Link href="/sectores/administracion-de-fincas" className="filter">Administradoras de fincas</Link>
+                <Link href="/sectores/inmobiliarias" className="filter">Inmobiliarias</Link>
+                <Link href="/sectores/bufetes-abogados" className="filter">Bufetes y despachos</Link>
+                <Link href="/sectores/clinicas-centros-salud" className="filter">Clínicas y centros de salud</Link>
+                <Link href="/sectores/empresas-mantenimiento" className="filter">Empresas de mantenimiento</Link>
+              </div>
+            </div>
+
             <div style={{ marginTop: "32px" }}>
               <Link href="/servicios" style={{ fontSize: "14px", color: "var(--ink-2)" }}>
                 ← Volver a todos los servicios

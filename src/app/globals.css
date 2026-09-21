@@ -100,7 +100,7 @@ section.block{padding:120px 0;position:relative}
 
 /* FOOTER */
 footer{background:var(--ink);color:#A8C4B0;padding:60px 0 40px;border-top:1px solid #244030}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
 .foot-grid .foot-label{font-family:"Geist";font-size:12px;text-transform:uppercase;letter-spacing:0.12em;color:#888886;margin-bottom:18px;font-weight:500}
 .foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .foot-grid a{font-size:14px;color:#BCD4C4;transition:color .15s ease}

@@ -24,6 +24,16 @@ export default function Footer() {
             </ul>
           </div>
           <div>
+            <p className="foot-label">Sectores</p>
+            <ul>
+              <li><Link href="/sectores/administracion-de-fincas">Administradoras de fincas</Link></li>
+              <li><Link href="/sectores/inmobiliarias">Inmobiliarias</Link></li>
+              <li><Link href="/sectores/bufetes-abogados">Bufetes y despachos</Link></li>
+              <li><Link href="/sectores/clinicas-centros-salud">Clínicas y centros de salud</Link></li>
+              <li><Link href="/sectores/empresas-mantenimiento">Empresas de mantenimiento</Link></li>
+            </ul>
+          </div>
+          <div>
             <p className="foot-label">Empresa</p>
             <ul>
               <li><Link href="/casos">Casos reales</Link></li>
