@@ -433,7 +433,7 @@ export default function FormacionIaEmpresas() {
                 </p>
               </div>
               <Link href="/contacto" className="btn btn-accent">
-                Ver si sale a cuenta
+                Quiero esas 90 horas
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
               </Link>
             </div>
