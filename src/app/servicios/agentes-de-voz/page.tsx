@@ -132,7 +132,7 @@ export default function AgentesDeVoz() {
         </header>
 
         {/* RESPUESTA DIRECTA GEO */}
-        <section className="svc-section" style={{ paddingBottom: "0" }}>
+        <section className="svc-section">
           <div className="wrap">
             <div style={{ maxWidth: "720px" }}>
               <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es un agente de voz con IA?</h2>

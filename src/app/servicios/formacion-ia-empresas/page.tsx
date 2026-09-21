@@ -243,7 +243,7 @@ export default function FormacionIaEmpresas() {
         </header>
 
         {/* RESPUESTA DIRECTA GEO */}
-        <section className="svc-section" style={{ paddingBottom: "0" }}>
+        <section className="svc-section">
           <div className="wrap">
             <div style={{ maxWidth: "720px" }}>
               <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>
@@ -663,7 +663,7 @@ export default function FormacionIaEmpresas() {
         </section>
 
         {/* ENLACES INTERNOS */}
-        <section className="svc-section" style={{ padding: "64px 0" }}>
+        <section className="svc-section" style={{ padding: "64px 0", background: "var(--bg)" }}>
           <div className="wrap">
             <div style={{ maxWidth: "720px" }}>
               <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "20px" }}>

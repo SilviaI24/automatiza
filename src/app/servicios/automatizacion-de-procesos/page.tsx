@@ -133,7 +133,7 @@ export default function AutomatizacionDeProcesos() {
         </header>
 
         {/* QUÉ ES AUTOMATIZAR PROCESOS — definición GEO */}
-        <section className="svc-section" style={{ paddingBottom: "0" }}>
+        <section className="svc-section">
           <div className="wrap">
             <div style={{ maxWidth: "720px" }}>
               <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>¿Qué es automatizar procesos en una empresa?</h2>
