@@ -6,19 +6,19 @@ import type { Metadata } from "next";
 // Precio por participante con mínimo de grupo. El mínimo protege el caso de
 // grupo pequeño: por debajo de 8 el taller no cubre la preparación previa.
 // Fuera de Asturias el desplazamiento se valora aparte.
-const PRECIO_PARTICIPANTE = "79 €";
+const PRECIO_PARTICIPANTE = "129 €";
 const GRUPO_MIN = 8;
 const GRUPO_MAX = 12;
 
 export const metadata: Metadata = {
   title: "Formación en IA para empresas",
   description:
-    "Taller presencial de 3 horas sobre las tareas reales de tu equipo. Desde 79 € por participante: con dos horas recuperadas a la semana se amortiza en menos de un mes. Asturias y Madrid.",
+    `Taller presencial de 3 horas sobre las tareas reales de tu equipo. Desde ${PRECIO_PARTICIPANTE} por participante: con dos horas recuperadas a la semana se amortiza en menos de un mes. Asturias y Madrid.`,
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/formacion-ia-empresas" },
   openGraph: {
     title: "Formación en IA para empresas | Automatiza tu Empresa",
     description:
-      "Noventa horas al año por persona. El taller cuesta 79 €. Tres horas presenciales sobre las tareas reales de tu equipo, 80% práctica.",
+      `Noventa horas al año por persona. El taller cuesta ${PRECIO_PARTICIPANTE}. Tres horas presenciales sobre las tareas reales de tu equipo, 80% práctica.`,
     url: "https://www.automatizatuempresa.com/servicios/formacion-ia-empresas",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
@@ -92,6 +92,7 @@ const courseSchema = {
     "@type": "Offer",
     priceCurrency: "EUR",
     price: PRECIO_PARTICIPANTE.replace(/[^\d]/g, ""),
+    category: "Paid",
     description: `Precio por participante. Grupos de ${GRUPO_MIN} a ${GRUPO_MAX} personas.`,
     availability: "https://schema.org/InStock",
     url: URL_PAGINA,
@@ -144,7 +145,7 @@ const faqs = [
   },
   {
     q: "¿Cómo justifico la inversión ante dirección?",
-    a: `Con aritmética. Tomando un coste laboral de 18 € por hora —una cifra razonable para perfiles administrativos o comerciales en España— dos horas recuperadas a la semana equivalen a 36 € semanales por persona. Con un coste de ${PRECIO_PARTICIPANTE} por participante, el taller queda amortizado en unas dos semanas. En un año esas dos horas semanales suman unas 90 horas por persona. La estimación de dos horas es deliberadamente conservadora: son veinte minutos al día. Sustituyendo el coste por hora por el real de vuestro equipo, la cuenta sigue saliendo con cualquier cifra realista.`,
+    a: `Con aritmética. Tomando un coste laboral de 18 € por hora —una cifra razonable para perfiles administrativos o comerciales en España— dos horas recuperadas a la semana equivalen a 36 € semanales por persona. Con un coste de ${PRECIO_PARTICIPANTE} por participante, el taller queda amortizado en algo menos de cuatro semanas. En un año esas dos horas semanales suman unas 90 horas por persona. La estimación de dos horas es deliberadamente conservadora: son veinte minutos al día. Sustituyendo el coste por hora por el real de vuestro equipo, la cuenta sigue saliendo con cualquier cifra realista.`,
   },
 ];
 
@@ -235,7 +236,7 @@ export default function FormacionIaEmpresas() {
             <div className="channels" style={{ marginTop: "32px" }}>
               <span className="chip"><span className="ind"></span>Presencial en tu oficina</span>
               <span className="chip"><span className="ind"></span>3 horas</span>
-              <span className="chip"><span className="ind"></span>Desde 79 € por participante</span>
+              <span className="chip"><span className="ind"></span>Desde {PRECIO_PARTICIPANTE} por participante</span>
               <span className="chip"><span className="ind"></span>Asturias y Madrid</span>
             </div>
           </div>
@@ -464,7 +465,7 @@ export default function FormacionIaEmpresas() {
                     { l: "Coste por participante", v: PRECIO_PARTICIPANTE },
                     { l: "Tiempo recuperado", v: "2 h / semana" },
                     { l: "Coste laboral estimado", v: "18 € / hora" },
-                    { l: "Amortización", v: "~2 semanas", destacado: true },
+                    { l: "Amortización", v: "3-4 semanas", destacado: true },
                     { l: "Recuperado en un año", v: "~90 horas", destacado: true },
                   ].map((fila) => (
                     <div

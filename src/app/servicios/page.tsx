@@ -69,7 +69,7 @@ export default function Servicios() {
                 <div className="channels">
                   <span className="chip"><span className="ind"></span>Presencial en tu oficina</span>
                   <span className="chip"><span className="ind"></span>3 horas · 80% práctica</span>
-                  <span className="chip"><span className="ind"></span>Desde 79 € por participante</span>
+                  <span className="chip"><span className="ind"></span>Desde 129 € por participante</span>
                   <span className="chip"><span className="ind"></span>Asturias y Madrid</span>
                 </div>
                 <Link href="/servicios/formacion-ia-empresas" className="btn btn-secondary" style={{ marginTop: "28px" }}>
