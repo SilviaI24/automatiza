@@ -13,7 +13,7 @@ const GRUPO_MAX = 12;
 export const metadata: Metadata = {
   title: "Formación en IA para empresas",
   description:
-    `Taller presencial de 3 horas sobre las tareas reales de tu equipo. Desde ${PRECIO_PARTICIPANTE} por participante: con dos horas recuperadas a la semana se amortiza en menos de un mes. Asturias y Madrid.`,
+    `Curso práctico de IA para empresas: taller presencial de 3 horas sobre las tareas reales de tu equipo. Desde ${PRECIO_PARTICIPANTE} por participante. Asturias y Madrid.`,
   alternates: { canonical: "https://www.automatizatuempresa.com/servicios/formacion-ia-empresas" },
   openGraph: {
     title: "Formación en IA para empresas | Automatiza tu Empresa",
@@ -136,8 +136,12 @@ const faqs = [
     a: "Un curso online enseña la herramienta con ejemplos genéricos, y el problema es que dos semanas después nadie ha aplicado nada a su trabajo. Aquí el taller se prepara sobre vuestros procesos concretos, se imparte de forma presencial con acompañamiento durante la práctica, y cada participante termina con flujos suyos ya funcionando. La diferencia no está en el contenido teórico sino en que se aplica sobre trabajo real desde el primer minuto.",
   },
   {
+    q: "¿Se puede hacer online o en remoto?",
+    a: "El formato es presencial, y no por comodidad: el taller es 80% práctica y buena parte del valor está en sentarse al lado de cada persona mientras resuelve una tarea suya y se atasca. Eso por videollamada se pierde, que es justo el motivo por el que tanta formación en IA online no acaba cambiando la forma de trabajar de nadie. Si tenéis el equipo repartido entre varias sedes, escríbenos y buscamos la manera de encajarlo.",
+  },
+  {
     q: "¿Dónde impartís la formación?",
-    a: "Presencial en Asturias y Madrid. Para otras provincias, consúltanos y valoramos el desplazamiento.",
+    a: "Impartimos presencialmente en Asturias —tenemos la base en Gijón— y en Madrid, desplazándonos a vuestras oficinas. Para otras provincias, consúltanos y valoramos el desplazamiento.",
   },
   {
     q: "¿Cuánto cuesta la formación en IA para empresas?",
@@ -250,13 +254,15 @@ export default function FormacionIaEmpresas() {
                 ¿Qué es la formación en IA para empresas?
               </h2>
               <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)" }}>
-                La formación en IA para empresas es un taller práctico en el que un equipo aprende
-                a aplicar herramientas de inteligencia artificial generativa —ChatGPT, Claude y
-                similares— a las tareas concretas de su trabajo diario. A diferencia de un curso
-                abierto, se prepara sobre los procesos reales de la empresa: antes de la sesión se
+                La formación en IA para empresas es un curso práctico, normalmente en formato de
+                taller, en el que un equipo aprende a aplicar herramientas de inteligencia
+                artificial generativa —ChatGPT, Claude y similares— a las tareas concretas de su
+                trabajo diario. A diferencia de un curso de IA abierto o de un programa online,
+                se prepara sobre los procesos reales de la empresa: antes de la sesión se
                 identifican los casos de uso con mayor potencial, y durante el taller cada
                 participante practica sobre su propio trabajo. El objetivo no es que el equipo
-                sepa qué es la IA, sino que la esté usando el lunes siguiente.
+                sepa qué es la inteligencia artificial, sino que la esté usando el lunes
+                siguiente.
               </p>
             </div>
           </div>
@@ -282,7 +288,7 @@ export default function FormacionIaEmpresas() {
             <div className="feat-grid">
               <div className="feat">
                 <div className="ico">01</div>
-                <h4>Prompts genéricos</h4>
+                <h3>Prompts genéricos</h3>
                 <p>
                   Se enseñan fórmulas que funcionan en la demo y se caen en cuanto el trabajo
                   real es más específico. Nadie recuerda la fórmula dos semanas después.
@@ -290,7 +296,7 @@ export default function FormacionIaEmpresas() {
               </div>
               <div className="feat">
                 <div className="ico">02</div>
-                <h4>Teoría sobre qué es la IA</h4>
+                <h3>Teoría sobre qué es la IA</h3>
                 <p>
                   Interesante durante la sesión, inútil el lunes. Entender cómo funciona un
                   modelo no ayuda a redactar la propuesta que hay que enviar esa tarde.
@@ -298,7 +304,7 @@ export default function FormacionIaEmpresas() {
               </div>
               <div className="feat">
                 <div className="ico">03</div>
-                <h4>Una herramienta, no un método</h4>
+                <h3>Una herramienta, no un método</h3>
                 <p>
                   Se forma sobre un producto concreto. Cambia el producto —y cambian cada pocos
                   meses— y el equipo vuelve al punto de partida.
@@ -341,7 +347,7 @@ export default function FormacionIaEmpresas() {
                   <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "14px" }}>
                     {area.label}
                   </div>
-                  <h4>{area.titulo}</h4>
+                  <h3>{area.titulo}</h3>
                   <p>{area.desc}</p>
                 </div>
               ))}
