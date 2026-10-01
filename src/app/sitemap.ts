@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base,                                                     lastModified: "2026-08-14", changeFrequency: "weekly",  priority: 1    },
     { url: `${base}/automatizacion-empresas-con-ia`,                 lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios`,                                      lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.9  },
-    { url: `${base}/servicios/formacion-ia-empresas`,                lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.9  },
+    { url: `${base}/servicios/formacion-ia-empresas`,                lastModified: "2026-10-01", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios/agentes-de-voz`,                       lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/servicios/crm-inteligente`,                      lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/servicios/automatizacion-de-procesos`,           lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.85 },

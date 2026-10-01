@@ -41,7 +41,7 @@ const webPageSchema = {
   "@id": `${URL_PAGINA}#webpage`,
   url: URL_PAGINA,
   name: "Formación en IA para empresas",
-  dateModified: "2026-09-21",
+  dateModified: "2026-10-01",
   isPartOf: { "@id": `${BASE}/#website` },
   breadcrumb: { "@id": `${URL_PAGINA}#breadcrumb` },
 };
