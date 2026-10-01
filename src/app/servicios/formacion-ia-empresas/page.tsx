@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 // Precio por participante con mínimo de grupo. El mínimo protege el caso de
@@ -247,7 +248,7 @@ export default function FormacionIaEmpresas() {
         </header>
 
         {/* RESPUESTA DIRECTA GEO */}
-        <section className="svc-section">
+        <section className="svc-section" style={{ background: "var(--bg)" }}>
           <div className="wrap">
             <div style={{ maxWidth: "720px" }}>
               <h2 style={{ fontSize: "clamp(24px,3vw,36px)", marginBottom: "16px" }}>
@@ -325,7 +326,7 @@ export default function FormacionIaEmpresas() {
         </section>
 
         {/* QUÉ TRABAJAMOS */}
-        <section className="svc-section">
+        <section className="svc-section" style={{ background: "var(--bg)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
@@ -379,6 +380,17 @@ export default function FormacionIaEmpresas() {
                 </p>
               </div>
             </div>
+
+            <figure style={{ margin: "0 0 48px", borderRadius: "var(--r-lg)", overflow: "hidden", border: "1px solid var(--line-soft)" }}>
+              <Image
+                src="/assets/david-taller.webp"
+                alt="David Jiménez impartiendo un taller de formación en IA a un equipo, trabajando sobre un caso real con portátil y notas"
+                width={1400}
+                height={933}
+                sizes="(max-width: 1024px) 100vw, 1216px"
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </figure>
 
             <div className="stat-row">
               <div className="stat">
@@ -503,8 +515,51 @@ export default function FormacionIaEmpresas() {
           </div>
         </section>
 
+        {/* QUIÉN IMPARTE */}
+        <section className="svc-section" style={{ background: "var(--bg)" }}>
+          <div className="wrap">
+            <div className="svc-grid-asym" style={{ gap: "56px", alignItems: "center" }}>
+              <div>
+                <div className="label">Quién lo imparte</div>
+                <h2 style={{ fontSize: "clamp(32px,4vw,52px)", marginBottom: "24px" }}>
+                  Lo da quien<br />construye los <span className="serif">sistemas</span>.
+                </h2>
+                <p style={{ fontSize: "17px", lineHeight: "1.6", color: "var(--ink-2)", marginBottom: "20px" }}>
+                  El taller lo imparte <strong style={{ color: "var(--ink)" }}>David Jiménez</strong>,
+                  socio de Automatiza tu Empresa. No es un formador que explica herramientas: es
+                  quien diseña y construye los agentes de IA y los sistemas de automatización que
+                  usan nuestros clientes.
+                </p>
+                <p style={{ fontSize: "17px", lineHeight: "1.6", color: "var(--ink-2)", marginBottom: "28px" }}>
+                  Eso cambia la sesión. Los ejemplos salen de proyectos reales, no de manuales. Y
+                  cuando alguien del equipo describe una tarea, la respuesta no es siempre un
+                  prompt mejor: a veces es que ese proceso no debería hacerse a mano, y conviene
+                  saber distinguirlo.
+                </p>
+                <div className="socio-tags">
+                  <span className="socio-tag">Agentes IA</span>
+                  <span className="socio-tag">Automatización</span>
+                  <span className="socio-tag">Arquitectura</span>
+                  <span className="socio-tag">Customer journey</span>
+                </div>
+              </div>
+
+              <figure style={{ margin: 0, borderRadius: "var(--r-lg)", overflow: "hidden", border: "1px solid var(--line-soft)" }}>
+                <Image
+                  src="/assets/david-retrato.webp"
+                  alt="Retrato de David Jiménez, socio de Automatiza tu Empresa y formador del taller de IA para empresas"
+                  width={900}
+                  height={1125}
+                  sizes="(max-width: 1024px) 100vw, 480px"
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
         {/* ENTREGABLES */}
-        <section className="svc-section">
+        <section className="svc-section" style={{ background: "var(--bg-2)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
@@ -573,7 +628,7 @@ export default function FormacionIaEmpresas() {
         </section>
 
         {/* EL EMBUDO */}
-        <section className="svc-section">
+        <section className="svc-section" style={{ background: "var(--bg-2)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
@@ -622,7 +677,7 @@ export default function FormacionIaEmpresas() {
         </section>
 
         {/* PARA QUIÉN */}
-        <section className="svc-section" style={{ background: "var(--bg-2)" }}>
+        <section className="svc-section" style={{ background: "var(--bg)" }}>
           <div className="wrap">
             <div style={{ maxWidth: "760px" }}>
               <span className="eyebrow">Para quién</span>
@@ -645,7 +700,7 @@ export default function FormacionIaEmpresas() {
         </section>
 
         {/* FAQ */}
-        <section className="svc-section faq">
+        <section className="svc-section faq" style={{ background: "var(--bg-2)" }}>
           <div className="wrap">
             <div className="faq-grid">
               <div className="sticky-info">
