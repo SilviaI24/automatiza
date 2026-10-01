@@ -145,6 +145,10 @@ const faqs = [
     a: "Impartimos presencialmente en Asturias —tenemos la base en Gijón— y en Madrid, desplazándonos a vuestras oficinas. Para otras provincias, consúltanos y valoramos el desplazamiento.",
   },
   {
+    q: "¿Entregáis certificado de asistencia?",
+    a: "Sí, un certificado para cada participante con el contenido trabajado y la duración de la sesión. Es formación no reglada —como prácticamente toda la formación corporativa, desde un curso de Excel hasta uno de ventas—, así que no se trata de un título oficial ni de un certificado de profesionalidad. Sirve para dejar constancia interna de que la persona ha hecho el taller: para el expediente de recursos humanos, para justificar la acción formativa ante dirección o para aportarlo a la entidad que tramite la bonificación, si es vuestro caso.",
+  },
+  {
     q: "¿Es formación bonificable por FUNDAE?",
     a: "No la tramitamos nosotros. Para aplicar el crédito de formación hace falta una entidad organizadora que se encargue de la comunicación previa y de la documentación ante FUNDAE, y nosotros no lo somos: trabajamos como profesionales independientes y concentramos el esfuerzo en preparar e impartir el taller. Dicho esto, que el formador sea independiente no impide por sí mismo la bonificación. Si tu empresa ya trabaja con una gestoría o con una entidad organizadora, puede plantearles tramitarlo por esa vía; por nuestra parte facilitamos el detalle del contenido, la duración y el registro de asistentes que necesiten. Quien determina si cumple los requisitos es esa entidad, no nosotros.",
   },
