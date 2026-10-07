@@ -249,6 +249,14 @@ export default function BufetesPage() {
               <Link href="/automatizacion-empresas-con-ia" style={{ fontSize: "14px", color: "var(--accent)", fontWeight: "500" }}>
                 Guía completa: cómo automatizar tu empresa con IA →
               </Link>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "var(--ink-2)", marginTop: "28px" }}>
+                No todo pasa por construir un sistema. A veces el primer paso es que un despacho sepa
+                usar la IA en su trabajo diario, y de ahí salen los procesos que de verdad merece
+                la pena automatizar después.{" "}
+                <Link href="/servicios/formacion-ia-empresas" style={{ color: "var(--accent)", fontWeight: 500 }}>
+                  Ver formación en IA para empresas →
+                </Link>
+              </p>
             </div>
           </div>
         </section>
