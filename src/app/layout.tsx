@@ -38,15 +38,6 @@ export const metadata: Metadata = {
   },
   description:
     "Automatizamos procesos con agentes IA, CRM inteligente y diagnóstico de operaciones a medida para empresas en España. Del análisis a la implementación.",
-  keywords: [
-    "automatización empresarial con IA",
-    "agentes IA para empresas",
-    "automatizar procesos empresariales",
-    "automatización de procesos empresariales",
-    "CRM inteligente España",
-    "agentes de voz empresarial",
-    "automatización de procesos Asturias",
-  ],
   authors: [{ name: "Automatiza tu Empresa" }],
   creator: "Automatiza tu Empresa",
   robots: {

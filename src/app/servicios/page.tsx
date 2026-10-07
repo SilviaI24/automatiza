@@ -80,7 +80,7 @@ export default function Servicios() {
         </header>
 
         {/* 01 FORMACIÓN */}
-        <section className="svc-section" id="formacion">
+        <section className="svc-section" id="formacion" style={{ background: "var(--bg)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
@@ -105,7 +105,7 @@ export default function Servicios() {
         </section>
 
         {/* 02 AUDITORÍA */}
-        <section className="svc-section" id="auditoria">
+        <section className="svc-section" id="auditoria" style={{ background: "var(--bg-2)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
@@ -170,7 +170,7 @@ export default function Servicios() {
         </section>
 
         {/* 02 AUTOMATIZACIÓN */}
-        <section className="svc-section" id="automatizacion">
+        <section className="svc-section" id="automatizacion" style={{ background: "var(--bg)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
@@ -288,7 +288,7 @@ export default function Servicios() {
         </section>
 
         {/* 05 SISTEMAS A MEDIDA */}
-        <section className="svc-section" id="agentico">
+        <section className="svc-section" id="agentico" style={{ background: "var(--bg)" }}>
           <div className="wrap">
             <div className="svc-head">
               <div>
