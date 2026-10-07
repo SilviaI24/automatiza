@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import WhatsappFloat from "@/components/WhatsappFloat";
+import AnalyticsEvents from "@/components/AnalyticsEvents";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -184,6 +186,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${bricolage.variable} ${geist.variable} ${geistMono.variable}`}>
       <body>
         {children}
+        <WhatsappFloat />
+        <AnalyticsEvents />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

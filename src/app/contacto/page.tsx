@@ -3,6 +3,7 @@ import { useState } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { track } from "@/lib/analytics";
 
 const slots = ["Mañana (9–13h)", "Tarde (16–19h)", "Me da igual"];
 
@@ -26,9 +27,11 @@ export default function Contacto() {
       });
       if (!res.ok) throw new Error();
       setSent(true);
+      track("form_contacto_enviado");
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setError(true);
+      track("form_contacto_error");
     } finally {
       setSending(false);
     }
