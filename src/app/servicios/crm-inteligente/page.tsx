@@ -70,6 +70,10 @@ const features = [
 
 const faqs = [
   {
+    q: "¿Qué es un CRM basado en IA y en qué se diferencia de uno tradicional?",
+    a: "Un CRM tradicional es un registro: guarda contactos, oportunidades y notas, pero espera a que alguien introduzca la información y decida qué hacer con ella. Un CRM basado en IA añade una capa que lee lo que ocurre y actúa — puntúa cada lead según su probabilidad real de cierre, registra sin intervención las conversaciones que entran por teléfono, WhatsApp o email, detecta las oportunidades que llevan demasiado tiempo paradas y dispara el seguimiento cuando toca. La diferencia práctica no está en dónde se guardan los datos sino en quién hace el trabajo administrativo: en un CRM inteligente lo hace el sistema, y el equipo comercial dedica el tiempo a hablar con clientes en lugar de a mantener la ficha al día.",
+  },
+  {
     q: "¿Funciona con el CRM que ya tengo o hay que migrar?",
     a: "Trabajamos con el CRM que ya tienes — HubSpot, Salesforce, Pipedrive, Zoho, Notion, Airtable u otros. Si necesitas migrar, también lo gestionamos. El objetivo es que pierdas el mínimo tiempo posible en la transición.",
   },

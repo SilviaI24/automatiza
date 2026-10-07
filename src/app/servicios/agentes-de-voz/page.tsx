@@ -61,6 +61,10 @@ const breadcrumbSchema = {
 
 const faqs = [
   {
+    q: "¿Hasta dónde llega la automatización de llamadas con IA?",
+    a: "La automatización de llamadas cubre el ciclo completo de las consultas que siguen patrones repetibles: el agente atiende, identifica quién llama, consulta los datos que necesita en el CRM o en el sistema de gestión, responde y ejecuta la acción correspondiente — crear un ticket, agendar una cita, actualizar un registro. En la mayoría de empresas eso resuelve entre el 70 y el 80% de las llamadas sin que intervenga nadie del equipo. El límite está donde empieza el criterio: una negociación, una reclamación delicada o una situación imprevista se escalan a una persona, pero con el contexto de la conversación ya recogido, de modo que quien la recibe no empieza de cero.",
+  },
+  {
     q: "¿En qué se diferencia de un chatbot tradicional?",
     a: "Un chatbot sigue un árbol de decisiones fijo y se rompe en cuanto la pregunta se sale del guión. Un agente de IA razona sobre la conversación, consulta tu CRM o catálogo en tiempo real y ejecuta acciones — resolviendo hasta el 70-80% de los casos sin intervención humana.",
   },

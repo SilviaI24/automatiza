@@ -23,6 +23,29 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  {
+    q: "¿Qué es la automatización empresarial con IA?",
+    a: "La automatización empresarial con IA consiste en que los procesos que hoy consumen horas de trabajo manual pasen a ejecutarse solos, y en que las decisiones repetitivas que exigen interpretar algo —leer una consulta, clasificar una incidencia, puntuar un lead— las tome un sistema en lugar de una persona. No es una única tecnología: según el proceso puede resolverse documentando y conectando las herramientas que ya existen, construyendo un flujo automático entre aplicaciones, o incorporando agentes de IA capaces de mantener una conversación y actuar sobre los sistemas internos. Lo que determina cuál corresponde no es la sofisticación disponible, sino el volumen y la complejidad del proceso.",
+  },
+  {
+    q: "¿Qué servicios de automatización necesita una empresa?",
+    a: "Depende del punto de partida, y por eso el orden importa más que el catálogo. Lo habitual es empezar formando al equipo en el uso de la IA en su trabajo diario, porque es lo más barato y lo que antes revela dónde se va el tiempo. Después, un diagnóstico que mapee los procesos y cuantifique cuánto vale automatizar cada uno. Y a partir de ahí lo que corresponda: automatización de flujos entre herramientas, agentes de voz y conversacionales para la atención, un CRM que gestione el seguimiento comercial, o software a medida cuando la lógica del negocio no encaja en nada estándar. Una empresa rara vez necesita todo a la vez.",
+  },
+  {
+    q: "¿Para quién son los servicios de automatización con IA?",
+    a: "Para cualquier empresa que sienta que sus equipos pasan demasiado tiempo en tareas que podrían automatizarse. Especialmente empresas con procesos manuales repetitivos, equipos que trabajan con muchas herramientas no integradas, negocios que quieren escalar sin contratar más personal y directivos que necesitan datos para justificar la inversión en IA.",
+  },
+  {
+    q: "¿Cuándo tiene sentido un sistema de agentes a medida?",
+    a: "Cuando un único agente ya no cubre el alcance, cuando hay procesos que cruzan departamentos o cuando necesitas que la IA no solo responda sino que ejecute sobre tus sistemas internos: onboarding de clientes, conciliación de facturas, gestión de incidencias o generación de informes sin intervención humana hasta la excepción.",
+  },
+  {
+    q: "¿Por dónde empezar a automatizar mi empresa?",
+    a: "El punto de partida es el diagnóstico de procesos. En 30 minutos analizamos cómo funciona tu empresa, detectamos qué procesos consumen más tiempo y cuánto vale automatizar cada uno. El informe y el plan de acción son tuyos, construyas la automatización con nosotros o no.",
+  },
+];
+
 export default function Servicios() {
   return (
     <>
@@ -332,6 +355,30 @@ export default function Servicios() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="svc-section faq" style={{ background: "var(--bg-2)" }}>
+          <div className="wrap">
+            <div className="faq-grid">
+              <div className="sticky-info">
+                <span className="eyebrow">Preguntas frecuentes</span>
+                <h2 style={{ marginTop: "20px" }}>Lo que nos<br />suelen <span className="serif">preguntar.</span></h2>
+                <p style={{ marginTop: "20px", fontSize: "15px", color: "var(--ink-2)", lineHeight: "1.55" }}>
+                  ¿No encuentras tu pregunta?{" "}
+                  <Link href="/contacto" style={{ color: "var(--ink)", textDecoration: "underline" }}>Escríbenos directamente.</Link>
+                </p>
+              </div>
+              <div className="faq-list">
+                {faqs.map((faq) => (
+                  <details key={faq.q}>
+                    <summary>{faq.q}</summary>
+                    <p>{faq.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA FINAL */}
         <section className="cta-final">
           <div className="wrap">
@@ -388,32 +435,11 @@ export default function Servicios() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "¿Para quién son los servicios de automatización con IA?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Para cualquier empresa que sienta que sus equipos pasan demasiado tiempo en tareas que podrían automatizarse. Especialmente empresas con procesos manuales repetitivos, equipos que trabajan con muchas herramientas no integradas, negocios que quieren escalar sin contratar más personal y directivos que necesitan datos para justificar la inversión en IA.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "¿Cuándo tiene sentido un sistema de agentes a medida?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Cuando un único agente ya no cubre el alcance, cuando hay procesos que cruzan departamentos o cuando necesitas que la IA no solo responda sino que ejecute sobre tus sistemas internos: onboarding de clientes, conciliación de facturas, gestión de incidencias o generación de informes sin intervención humana hasta la excepción.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "¿Por dónde empezar a automatizar mi empresa?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "El punto de partida es el diagnóstico de procesos. En 30 minutos analizamos cómo funciona tu empresa, detectamos qué procesos consumen más tiempo y cuánto vale automatizar cada uno. El informe y el plan de acción son tuyos, construyas la automatización con nosotros o no.",
-                },
-              },
-            ],
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
           }),
         }}
       />
