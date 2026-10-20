@@ -133,6 +133,29 @@ export default function Home() {
           </div>
         </section>
 
+        {/* CALCULADORA */}
+        <section className="block" style={{ background: "var(--bg-2)" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px", padding: "clamp(28px,4vw,40px)", background: "var(--ink)", color: "var(--paper)", borderRadius: "var(--r-lg)" }}>
+              <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.12em", color: "#A8C4B0", marginBottom: "14px" }}>
+                Herramienta gratuita
+              </div>
+              <h2 style={{ fontSize: "clamp(26px,3.4vw,40px)", color: "var(--paper)", marginBottom: "14px", lineHeight: "1.1" }}>
+                ¿Cuánto tiempo puedes recuperar?
+              </h2>
+              <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#A8C4B0", marginBottom: "26px", maxWidth: "520px" }}>
+                Dos minutos para estimar las horas que tu equipo deja cada año en tareas que
+                podrían no hacerse a mano. Sin registro. Y te dice también qué procesos no
+                compensa automatizar.
+              </p>
+              <Link href="/calculadora-automatizacion" className="btn btn-accent">
+                Calcularlo
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ── CASOS ─────────────────────────────────────────── */}
         <section className="block" id="casos" style={{ background: "var(--bg)" }}>
           <div className="wrap">
@@ -273,29 +296,6 @@ export default function Home() {
                 <summary>¿Cuánto cuesta automatizar procesos en una empresa?</summary>
                 <p>Depende del alcance y la complejidad de lo que automaticemos. El diagnóstico de procesos es un servicio independiente con precio cerrado — el informe y el plan de acción son tuyos. Los proyectos de automatización los presupuestamos caso a caso, siempre tras entender cómo trabaja tu empresa. En los 30 minutos iniciales te damos una estimación honesta.</p>
               </details>
-            </div>
-          </div>
-        </section>
-
-        {/* CALCULADORA */}
-        <section className="block" style={{ paddingTop: "0" }}>
-          <div className="wrap">
-            <div style={{ maxWidth: "720px", padding: "clamp(28px,4vw,40px)", background: "var(--ink)", color: "var(--paper)", borderRadius: "var(--r-lg)" }}>
-              <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.12em", color: "#A8C4B0", marginBottom: "14px" }}>
-                Herramienta gratuita
-              </div>
-              <h2 style={{ fontSize: "clamp(26px,3.4vw,40px)", color: "var(--paper)", marginBottom: "14px", lineHeight: "1.1" }}>
-                ¿Cuánto tiempo puedes recuperar?
-              </h2>
-              <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#A8C4B0", marginBottom: "26px", maxWidth: "520px" }}>
-                Dos minutos para estimar las horas que tu equipo deja cada año en tareas que
-                podrían no hacerse a mano. Sin registro. Y te dice también qué procesos no
-                compensa automatizar.
-              </p>
-              <Link href="/calculadora-automatizacion" className="btn btn-accent">
-                Calcularlo
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
-              </Link>
             </div>
           </div>
         </section>

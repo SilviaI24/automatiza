@@ -8,6 +8,7 @@ const links = [
   { href: "/servicios", label: "Servicios" },
   { href: "/servicios/formacion-ia-empresas", label: "Formación" },
   { href: "/sectores", label: "Sectores" },
+  { href: "/calculadora-automatizacion", label: "Calculadora" },
   { href: "/casos", label: "Casos" },
   { href: "/nosotros", label: "Nosotros" },
 ];
