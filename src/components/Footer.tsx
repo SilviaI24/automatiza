@@ -21,6 +21,7 @@ export default function Footer() {
               <li><Link href="/servicios/automatizacion-de-procesos">Automatización de procesos</Link></li>
               <li><Link href="/servicios/crm-inteligente">CRM inteligente</Link></li>
               <li><Link href="/servicios#agentico">Sistemas a medida</Link></li>
+              <li><Link href="/calculadora-automatizacion">Calculadora de automatización</Link></li>
             </ul>
           </div>
           <div>

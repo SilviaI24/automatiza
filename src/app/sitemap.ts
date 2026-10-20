@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base,                                                     lastModified: "2026-10-20", changeFrequency: "weekly",  priority: 1    },
     { url: `${base}/automatizacion-empresas-con-ia`,                 lastModified: "2026-10-20", changeFrequency: "monthly", priority: 0.9  },
+    { url: `${base}/calculadora-automatizacion`,                     lastModified: "2026-10-20", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios`,                                      lastModified: "2026-10-20", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios/formacion-ia-empresas`,                lastModified: "2026-10-01", changeFrequency: "monthly", priority: 0.9  },
     { url: `${base}/servicios/agentes-de-voz`,                       lastModified: "2026-10-07", changeFrequency: "monthly", priority: 0.85 },
