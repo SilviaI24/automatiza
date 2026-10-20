@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="pill">un sistema de IA.</span>
               </h1>
               <p className="hero-subhead">
-                Automatizamos los procesos de tu empresa con agentes de voz, CRM inteligente y flujos automáticos a medida — para que tu operación funcione sola y tu equipo se dedique a lo que realmente importa.
+                Automatizamos los procesos de tu empresa con agentes de voz, CRM inteligente y flujos a medida. Empezamos por el diagnóstico: a veces basta con conectar bien lo que ya tienes.
               </p>
               <div className="hero-chips">
                 <span>Llamadas sin contestar</span>
@@ -73,7 +73,7 @@ export default function Home() {
               <div className="step">
                 <span className="n">02 — Diseñamos y construimos</span>
                 <h3>La arquitectura correcta</h3>
-                <p>Diseñamos la solución exacta para cada caso — conectamos las herramientas que ya tienes y construimos los flujos específicos que tu operación necesita.</p>
+                <p>Diseñamos la solución exacta para cada caso — conectamos las herramientas que ya tienes y construimos los flujos específicos que tu empresa necesita.</p>
               </div>
               <div className="step step-last">
                 <span className="n">03 — Lo dejamos rodando</span>
@@ -267,7 +267,7 @@ export default function Home() {
               </details>
               <details>
                 <summary>¿Cómo sé si mi empresa está lista para automatizar procesos?</summary>
-                <p>Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu operación y te decimos qué se puede automatizar y cuánto vale hacerlo.</p>
+                <p>Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu empresa y te decimos qué se puede automatizar y cuánto vale hacerlo.</p>
               </details>
               <details>
                 <summary>¿Cuánto cuesta automatizar procesos en una empresa?</summary>
@@ -354,7 +354,7 @@ export default function Home() {
                 name: "¿Cómo sé si mi empresa está lista para automatizar procesos?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu operación y te decimos qué se puede automatizar y cuánto vale hacerlo.",
+                  text: "Si tu equipo dedica horas a tareas repetitivas que siguen siempre el mismo patrón, probablemente ya estás listo. No necesitas equipo técnico propio ni cambiar las herramientas actuales. El primer paso es un diagnóstico: mapeamos cómo funciona tu empresa y te decimos qué se puede automatizar y cuánto vale hacerlo.",
                 },
               },
               {

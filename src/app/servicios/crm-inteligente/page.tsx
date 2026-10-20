@@ -275,7 +275,7 @@ export default function CrmInteligente() {
           <div className="wrap">
             <span className="eyebrow" style={{ color: "#B8B6AE" }}>¿Tu equipo pierde tiempo administrando el CRM?</span>
             <h2 style={{ marginTop: "24px" }}>Reserva 30 minutos.<br /><span className="serif">Sin compromiso.</span></h2>
-            <p>Te decimos qué automatizaríamos primero en tu operación comercial y qué resultado puedes esperar.</p>
+            <p>Te decimos por dónde empezaríamos con tu equipo comercial y qué resultado puedes esperar.</p>
             <div className="row">
               <Link href="/contacto" className="btn btn-primary">
                 Reservar 30 minutos

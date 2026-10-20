@@ -48,7 +48,7 @@ export default function Contacto() {
         <header className="page-hero">
           <div className="wrap">
             <span className="eyebrow">Contacto</span>
-            <h1>Hablemos<br />de tu <span className="serif">operación</span>.</h1>
+            <h1>Hablemos<br />de tu <span className="serif">empresa</span>.</h1>
             <p className="lede">Cuéntanos cómo trabaja tu equipo. Escuchamos, hacemos las preguntas que importan y te damos una primera opinión honesta sobre qué podría automatizarse — y si tiene sentido hacerlo.</p>
           </div>
         </header>

@@ -66,7 +66,7 @@ export default function Servicios() {
             <span className="eyebrow">Servicios</span>
             <h1>Servicios de<br /><span className="serif">automatización</span><br />con IA.</h1>
             <p className="lede">
-              Seis servicios para automatizar la operación de tu empresa de principio a fin: formación del equipo, diagnóstico de procesos, agentes IA, automatización de procesos, CRM inteligente y software a medida.
+              Seis formas de quitarle trabajo manual a tu equipo: formación, diagnóstico de procesos, automatización de flujos, agentes de voz, CRM inteligente y software a medida.
             </p>
             <div className="toc">
               <a href="#formacion">→ Formación en IA</a>
@@ -383,7 +383,7 @@ export default function Servicios() {
         <section className="cta-final">
           <div className="wrap">
             <span className="eyebrow" style={{ color: "#B8B6AE" }}>¿No estás seguro de por dónde empezar?</span>
-            <h2 style={{ marginTop: "24px" }}>Hablemos de tu<br />operación. <span className="serif">Sin venta dura.</span></h2>
+            <h2 style={{ marginTop: "24px" }}>Hablemos de tu<br />empresa. <span className="serif">Sin venta dura.</span></h2>
             <p>Una conversación, sin venta dura. Nos cuentas cómo trabaja tu equipo, hacemos las preguntas correctas y te damos una primera opinión honesta. Si tiene sentido seguir, lo sabrás antes de salir.</p>
             <div className="row">
               <Link href="/contacto" className="btn btn-primary">

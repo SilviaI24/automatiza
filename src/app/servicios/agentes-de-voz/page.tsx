@@ -232,7 +232,7 @@ export default function AgentesDeVoz() {
         {/* ENLACES INTERNOS */}
         <section className="svc-section" style={{ padding: "64px 0" }}>
           <div className="wrap">
-            <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "32px" }}>Conecta con el resto<br />de tu <span className="serif">operación</span>.</h2>
+            <h2 style={{ fontSize: "clamp(28px,3.5vw,44px)", marginBottom: "32px" }}>Conecta con el resto<br />de tus <span className="serif">sistemas</span>.</h2>
             <div className="svc-grid-2">
               <div style={{ padding: "28px", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-lg)" }}>
                 <div style={{ fontFamily: "'Geist Mono'", fontSize: "11px", color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "12px" }}>CRM Inteligente</div>
@@ -291,7 +291,7 @@ export default function AgentesDeVoz() {
           <div className="wrap">
             <span className="eyebrow" style={{ color: "#B8B6AE" }}>¿Te imaginas tu equipo sin gestionar llamadas repetitivas?</span>
             <h2 style={{ marginTop: "24px" }}>Reserva 30 minutos.<br /><span className="serif">Sin compromiso.</span></h2>
-            <p>Te decimos qué automatizaríamos primero en tu operación y qué resultado puedes esperar.</p>
+            <p>Te decimos qué automatizaríamos primero y qué resultado puedes esperar.</p>
             <div className="row">
               <Link href="/contacto" className="btn btn-primary">
                 Reservar 30 minutos

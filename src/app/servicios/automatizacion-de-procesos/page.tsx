@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Automatización de procesos para empresas",
     description:
-      "Flujos automáticos 24/7 diseñados a medida para tu operación. Leads, onboarding, facturación y reportes sin intervención manual.",
+      "Flujos automáticos 24/7 diseñados para cómo trabaja tu empresa. Leads, onboarding, facturación y reportes sin intervención manual.",
     url: "https://www.automatizatuempresa.com/servicios/automatizacion-de-procesos",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Automatización de procesos para empresas",
-    description: "Flujos automáticos 24/7 a medida. Eliminamos el trabajo manual repetitivo en tu operación.",
+    description: "Flujos automáticos 24/7 a medida. Eliminamos el trabajo manual repetitivo del día a día.",
     images: ["/og.png"],
   },
 };

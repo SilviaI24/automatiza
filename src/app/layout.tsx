@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Automatización con IA para empresas | Automatiza tu Empresa",
     description:
-      "Agentes IA, automatización de procesos y CRM inteligente a medida para empresas. Reserva 30 min y descubre qué automatizaríamos en tu operación.",
+      "Agentes IA, automatización de procesos y CRM inteligente a medida para empresas. Reserva 30 min y te decimos qué automatizaríamos primero.",
     url: BASE_URL,
     siteName: "Automatiza tu Empresa",
     locale: "es_ES",
