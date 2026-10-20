@@ -19,6 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sectores/clinicas-centros-salud`,                lastModified: "2026-10-07", changeFrequency: "monthly", priority: 0.8  },
     { url: `${base}/casos`,                                          lastModified: "2026-07-21", changeFrequency: "monthly", priority: 0.8  },
     { url: `${base}/contacto`,                                       lastModified: "2026-10-07", changeFrequency: "monthly", priority: 0.7  },
-    { url: `${base}/nosotros`,                                       lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.6  },
+    { url: `${base}/nosotros`,                                       lastModified: "2026-10-20", changeFrequency: "monthly", priority: 0.6  },
   ];
 }

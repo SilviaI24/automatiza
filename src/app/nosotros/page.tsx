@@ -5,18 +5,18 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quiénes somos — Automatización con IA en Gijón",
-  description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España. Conoce cómo trabajamos.",
+  title: { absolute: "Agencia de automatización con IA en Asturias | Automatiza" },
+  description: "Consultora de automatización con IA en Gijón, Asturias. Dos personas que diseñan y construyen los sistemas — hablas con quien hace el trabajo.",
   openGraph: {
-    title: "Quiénes somos | Automatiza tu Empresa — Gijón, Asturias",
-    description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España. Conoce cómo trabajamos.",
+    title: "Agencia de automatización con IA en Asturias | Automatiza tu Empresa",
+    description: "Consultora de automatización con IA en Gijón, Asturias. Dos personas que diseñan y construyen los sistemas — hablas con quien hace el trabajo.",
     url: "https://www.automatizatuempresa.com/nosotros",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quiénes somos | Automatiza tu Empresa — Gijón, Asturias",
-    description: "Diseñamos agentes IA y sistemas de automatización a medida desde Gijón para empresas de toda España.",
+    title: "Agencia de automatización con IA en Asturias | Automatiza tu Empresa",
+    description: "Consultora de automatización con IA en Gijón, Asturias. Hablas con quien diseña y construye el sistema.",
     images: ["/og.png"],
   },
   alternates: {
@@ -77,6 +77,34 @@ export default function Nosotros() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* AGENCIA PEQUEÑA */}
+        <section className="svc-section" style={{ background: "var(--bg-2)" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "760px" }}>
+              <span className="eyebrow">Cómo trabajamos</span>
+              <h2 style={{ marginTop: "20px", fontSize: "clamp(32px,4vw,52px)", marginBottom: "28px" }}>
+                Somos una agencia pequeña.<br /><span className="serif">A propósito.</span>
+              </h2>
+              <p style={{ fontSize: "17px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "20px" }}>
+                Dos personas trabajando desde Gijón para empresas de toda España. Eso significa
+                que quien te atiende en la primera llamada es quien diseña el sistema y quien lo
+                construye — no hay comercial, ni gestor de cuenta, ni un equipo al que explicarle
+                otra vez lo que ya contaste.
+              </p>
+              <p style={{ fontSize: "17px", lineHeight: "1.65", color: "var(--ink-2)" }}>
+                También significa que no cogemos veinte proyectos a la vez. Si en el diagnóstico
+                vemos que lo tuyo no encaja con cómo trabajamos, te lo decimos y te ahorramos el
+                presupuesto.
+              </p>
+              <p style={{ fontSize: "17px", lineHeight: "1.65", color: "var(--ink-2)", marginTop: "20px" }}>
+                Estamos en Asturias y nos desplazamos cuando el proyecto lo pide, pero la mayor
+                parte del trabajo es remoto: de nuestros clientes, unos están a veinte minutos y
+                otros en Madrid o Valencia.
+              </p>
             </div>
           </div>
         </section>
