@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
+import GuiaLead from "@/components/GuiaLead";
 
 const BASE = "https://www.automatizatuempresa.com";
 const URL_PILAR = `${BASE}/automatizacion-empresas-con-ia`;
@@ -307,6 +308,15 @@ export default function AutomatizacionEmpresasConIA() {
                   <p style={{ fontSize: "13px", color: "var(--ink-2)", lineHeight: "1.5", margin: 0 }}>{s.desc}</p>
                 </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* DESCARGA POR EMAIL */}
+        <section className="block" style={{ paddingTop: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <GuiaLead origen="guia-pilar" />
             </div>
           </div>
         </section>

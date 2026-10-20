@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ChatMock from "@/components/ChatMock";
 import Link from "next/link";
+import GuiaLead from "@/components/GuiaLead";
 
 export default function Home() {
   return (
@@ -273,6 +274,15 @@ export default function Home() {
                 <summary>¿Cuánto cuesta automatizar procesos en una empresa?</summary>
                 <p>Depende del alcance y la complejidad de lo que automaticemos. El diagnóstico de procesos es un servicio independiente con precio cerrado — el informe y el plan de acción son tuyos. Los proyectos de automatización los presupuestamos caso a caso, siempre tras entender cómo trabaja tu empresa. En los 30 minutos iniciales te damos una estimación honesta.</p>
               </details>
+            </div>
+          </div>
+        </section>
+
+        {/* ── GUÍA POR EMAIL ─────────────────────────────────── */}
+        <section className="block" style={{ paddingTop: "0" }}>
+          <div className="wrap">
+            <div style={{ maxWidth: "720px" }}>
+              <GuiaLead origen="home" />
             </div>
           </div>
         </section>
