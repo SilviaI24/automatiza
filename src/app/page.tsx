@@ -37,7 +37,7 @@ export default function Home() {
                     <path d="M3 8h10m0 0L9 4m4 4l-4 4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
                   </svg>
                 </Link>
-                <Link href="/casos" className="btn btn-secondary">Ver casos</Link>
+                <Link href="/calculadora-automatizacion" className="btn btn-secondary">Calcular cuánto puedes recuperar</Link>
               </div>
               <div className="hero-meta">
                 <div><span className="hero-cap">Customer journey completo</span><span className="lbl">Del primer contacto al cierre, sin fricción ni pasos manuales.</span></div>

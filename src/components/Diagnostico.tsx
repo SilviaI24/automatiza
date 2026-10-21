@@ -23,6 +23,7 @@ export default function Diagnostico() {
 
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
+  const [novedades, setNovedades] = useState(false);
   const [envio, setEnvio] = useState<"inicial" | "enviando" | "ok" | "error">("inicial");
 
   const resultado = useMemo(() => calcular(horas, coste), [horas, coste]);
@@ -49,7 +50,7 @@ export default function Diagnostico() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email, consent, costeHora: coste,
+          email, consent, novedades, costeHora: coste,
           horasAno: resultado.horasAno,
           euros: resultado.euros,
           procesos: resultado.procesos.map((r) => ({
@@ -248,6 +249,15 @@ export default function Diagnostico() {
                         <Link href="/politica-de-privacidad" style={{ color: "var(--accent)", textDecoration: "underline" }}>Política de privacidad</Link>
                       </span>
                     </label>
+                    <label style={{ display: "flex", gap: "10px", alignItems: "flex-start", fontSize: "13px", lineHeight: "1.5", color: "var(--ink-2)", cursor: "pointer", marginTop: "12px" }}>
+                      <input type="checkbox" checked={novedades} onChange={(e) => setNovedades(e.target.checked)} style={{ marginTop: "3px", accentColor: "var(--accent)", flexShrink: 0 }} />
+                      <span>
+                        <strong style={{ color: "var(--ink)", fontWeight: 500 }}>Opcional:</strong> quiero recibir de vez en cuando
+                        lo que vamos aprendiendo sobre automatización. Como mucho una vez al mes, y
+                        te das de baja desde cualquier correo.
+                      </span>
+                    </label>
+
                     {envio === "error" && (
                       <p style={{ marginTop: "14px", fontSize: "13px", color: "var(--destructive, #B91C1C)" }}>
                         No ha salido. Inténtalo otra vez o escríbenos a hablemos@automatizatuempresa.com

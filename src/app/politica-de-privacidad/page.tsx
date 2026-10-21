@@ -63,7 +63,8 @@ export default function PoliticaPrivacidad() {
                   <li><strong>Atender tu consulta comercial</strong> y darte respuesta sobre nuestros servicios de automatización e inteligencia artificial.</li>
                   <li><strong>Gestionar la relación comercial</strong> que pueda derivarse del contacto inicial, incluyendo el envío de propuestas o presupuestos.</li>
                   <li><strong>Comunicaciones de seguimiento</strong> relacionadas con tu solicitud, nunca con fines publicitarios no solicitados.</li>
-                  <li><strong>Enviarte la guía de automatización</strong> que hayas solicitado, y poder contactarte una sola vez para saber si te resultó útil. No te incorporamos a ninguna lista de difusión ni te enviamos boletines periódicos.</li>
+                  <li><strong>Enviarte el resultado de la calculadora</strong> que hayas solicitado, y poder contactarte una sola vez para saber si te resultó útil.</li>
+                  <li><strong>Enviarte comunicaciones periódicas</strong> sobre automatización, <strong>solo si marcas expresamente la casilla opcional</strong> prevista para ello. Son como mucho mensuales y puedes darte de baja desde cualquiera de ellas.</li>
                 </ul>
                 <p>No utilizamos tus datos para elaborar perfiles automatizados ni para tomar decisiones automáticas que te afecten.</p>
               </div>
@@ -72,14 +73,16 @@ export default function PoliticaPrivacidad() {
                 <h2>4. Base jurídica del tratamiento</h2>
                 <p>La base jurídica que legitima el tratamiento es el <strong>consentimiento expreso</strong> que otorgas al marcar la casilla de aceptación del formulario de contacto (art. 6.1.a RGPD).</p>
                 <p>Para la gestión de la relación comercial precontractual, la base es la <strong>ejecución de medidas precontractuales</strong> a petición del interesado (art. 6.1.b RGPD).</p>
-                <p>En el caso de la descarga de la guía, la base es igualmente tu <strong>consentimiento expreso</strong>, que otorgas al marcar la casilla correspondiente antes de enviar el formulario (art. 6.1.a RGPD). Puedes retirarlo en cualquier momento escribiéndonos, sin que ello afecte a la licitud del tratamiento previo.</p>
+                <p>En el caso de la calculadora, la base es igualmente tu <strong>consentimiento expreso</strong>, que otorgas al marcar la casilla correspondiente antes de enviar el formulario (art. 6.1.a RGPD).</p>
+                <p>El consentimiento para recibir comunicaciones periódicas es <strong>independiente y voluntario</strong>: aceptar que te enviemos el resultado no implica autorizarnos a incluirte en ninguna lista. Son dos casillas distintas y la segunda viene sin marcar. Puedes retirar cualquiera de los dos consentimientos en cualquier momento escribiéndonos o usando el enlace de baja, sin que ello afecte a la licitud del tratamiento previo.</p>
               </div>
 
               <div className="legal-section">
                 <h2>5. Conservación de los datos</h2>
                 <p>Conservaremos tus datos durante el tiempo necesario para gestionar tu solicitud y mantener la relación comercial. Una vez finalizada esta relación, los datos se bloquearán y conservarán durante los plazos legalmente establecidos para atender posibles responsabilidades, tras lo cual serán eliminados definitivamente.</p>
                 <p>Si no existe relación comercial activa, los datos de contacto se eliminarán pasados <strong>2 años</strong> desde el último contacto.</p>
-                <p>Las direcciones recogidas únicamente para el envío de la guía se eliminarán pasados <strong>12 meses</strong> desde la solicitud, salvo que en ese tiempo se haya iniciado una relación comercial.</p>
+                <p>Las direcciones recogidas únicamente para enviar el resultado de la calculadora se eliminarán pasados <strong>12 meses</strong> desde la solicitud, salvo que en ese tiempo se haya iniciado una relación comercial.</p>
+                <p>Si aceptaste recibir comunicaciones periódicas, conservaremos tu dirección mientras no te des de baja. En el momento en que lo hagas, se elimina.</p>
               </div>
 
               <div className="legal-section">

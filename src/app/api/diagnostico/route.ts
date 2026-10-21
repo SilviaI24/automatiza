@@ -29,6 +29,7 @@ export async function POST(req: NextRequest) {
     if (!emailValido(email)) return NextResponse.json({ ok: false, error: "email" }, { status: 400 });
     if (data?.consent !== true) return NextResponse.json({ ok: false, error: "consent" }, { status: 400 });
 
+    const novedades = data?.novedades === true;
     const costeHora = num(data?.costeHora, 200) || 18;
     const horasAno = num(data?.horasAno, 100000);
     const totalEuros = num(data?.euros, 10000000);
@@ -110,6 +111,7 @@ export async function POST(req: NextRequest) {
       <tr><td style="padding:6px 16px 6px 0;color:#5E7A68;white-space:nowrap">Email</td><td style="padding:6px 0;color:${TINTA}">${esc(email)}</td></tr>
       <tr><td style="padding:6px 16px 6px 0;color:#5E7A68;white-space:nowrap">Potencial</td><td style="padding:6px 0;color:${TINTA}"><strong>${horasAno.toLocaleString("es-ES")} h/año · ${totalEuros.toLocaleString("es-ES")} €</strong></td></tr>
       <tr><td style="padding:6px 16px 6px 0;color:#5E7A68;white-space:nowrap">Coste/hora</td><td style="padding:6px 0;color:${TINTA}">${costeHora} €</td></tr>
+      <tr><td style="padding:6px 16px 6px 0;color:#5E7A68;white-space:nowrap">Novedades</td><td style="padding:6px 0;color:${novedades ? VERDE : "#9AA89E"}"><strong>${novedades ? "SÍ — puede entrar en la lista" : "No lo ha aceptado — no incorporar"}</strong></td></tr>
     </table>
     <p style="margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#5E7A68">Lo que declaró</p>
     <table style="width:100%;border-collapse:collapse">${tabla}</table>
