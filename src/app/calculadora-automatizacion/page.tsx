@@ -34,7 +34,7 @@ const webPageSchema = {
   "@id": `${URL_PAGINA}#webpage`,
   url: URL_PAGINA,
   name: "Calculadora de automatización para empresas",
-  dateModified: "2026-10-20",
+  dateModified: "2026-10-26",
   isPartOf: { "@id": `${BASE}/#website` },
   breadcrumb: { "@id": `${URL_PAGINA}#breadcrumb` },
 };
@@ -51,6 +51,35 @@ const appSchema = {
     "Herramienta gratuita que estima las horas anuales que una empresa puede recuperar automatizando sus procesos, e indica cuáles no compensa automatizar.",
   provider: { "@id": `${BASE}/#organization` },
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+};
+
+const faqs = [
+  {
+    q: "¿Cuántas horas se pueden ahorrar automatizando una empresa?",
+    a: "Depende del volumen, no del tamaño de la empresa. La referencia útil es por proceso: un equipo comercial que dedica 10 horas semanales entre todos a seguimiento recupera unas 322 horas al año, porque alrededor del 70% de ese trabajo puede dejar de hacerse a mano. Los informes periódicos llegan al 90% porque son reglas puras; redactar documentos se queda en la mitad porque hace falta criterio. Lo que determina la cifra es cuántas horas se van hoy en tareas repetibles, y eso varía muchísimo entre dos empresas del mismo sector.",
+  },
+  {
+    q: "¿Qué procesos no merece la pena automatizar?",
+    a: "Los que consumen poco tiempo, por mucho que molesten. Por debajo de unas 30 horas al año —unos 40 minutos a la semana— construir una automatización no se paga: hay que diseñarla, probarla y mantenerla cada vez que algo cambie alrededor. También quedan fuera los procesos que cambian constantemente, porque automatizar algo inestable multiplica el mantenimiento. Y los que dependen de criterio en cada caso: ahí la IA acelera el trabajo de la persona, pero no la sustituye.",
+  },
+  {
+    q: "¿Es fiable la estimación de la calculadora?",
+    a: "Sirve para decidir si merece la pena mirar esto en serio, no para aprobar una inversión. El punto débil no es el cálculo sino el dato de partida: casi todo el mundo estima mal su propio tiempo, unas veces por arriba y otras por abajo. Por eso enseñamos todos los supuestos —el porcentaje automatizable de cada tarea, las 46 semanas laborables, el umbral de descarte y el coste por hora— para que puedas discutirlos o sustituirlos por los tuyos. Una cifra fiable requiere medir los procesos como ocurren de verdad, y eso no se hace con un formulario.",
+  },
+  {
+    q: "¿Cuánto cuesta automatizar un proceso?",
+    a: "Varía demasiado como para dar una cifra honesta sin ver el caso. Lo que la mueve es sobre todo con cuántos sistemas hay que hablar y en qué estado están: conectar dos herramientas que ya tienen integración es rápido, y hacerlo contra un ERP antiguo sin API puede llevar semanas. Como orden de magnitud sí vale esto: si un proceso no recupera al menos unas 100 horas al año, rara vez compensa construir nada. Esa es la razón por la que la calculadora los descarta en lugar de sumarlos al total.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
 };
 
 const breadcrumbSchema = {
@@ -78,11 +107,12 @@ export default function CalculadoraAutomatizacion() {
 
         <header className="page-hero">
           <div className="wrap">
-            <span className="eyebrow">Herramienta gratuita</span>
+            <span className="eyebrow">Calculadora gratuita</span>
             <h1>¿Cuánto tiempo<br />puedes <span className="serif">recuperar</span>?</h1>
             <p className="lede">
-              Dos minutos y una estimación de las horas que tu equipo deja cada año en tareas que
-              podrían no hacerse a mano. Sin registro, sin correo: el resultado sale en pantalla.
+              Esta calculadora de automatización estima, en dos minutos, las horas que tu equipo
+              deja cada año en tareas que podrían no hacerse a mano. Sin registro y sin correo: el
+              resultado sale en pantalla.
             </p>
           </div>
         </header>
@@ -127,6 +157,23 @@ export default function CalculadoraAutomatizacion() {
               </div>
 
               <div>
+                <h3 style={{ fontSize: "24px", marginBottom: "14px" }}>Un ejemplo con números</h3>
+                <p style={{ fontSize: "15px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "14px" }}>
+                  Un equipo comercial que dedica <strong style={{ color: "var(--ink)" }}>10 horas a la
+                  semana</strong> entre todos a seguimiento —perseguir presupuestos, actualizar fichas,
+                  recordar quién quedó pendiente—:
+                </p>
+                <div style={{ fontFamily: "'Geist Mono'", fontSize: "14px", lineHeight: "1.9", color: "var(--ink-2)", background: "var(--paper)", border: "1px solid var(--line-soft)", borderRadius: "var(--r-md)", padding: "18px 20px", marginBottom: "14px" }}>
+                  10 h/semana × 70% × 46 semanas = <strong style={{ color: "var(--accent)" }}>322 h/año</strong>
+                  <br />
+                  322 h × 18 €/h = <strong style={{ color: "var(--accent)" }}>5.796 €/año</strong>
+                </div>
+                <p style={{ fontSize: "15px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
+                  Unas 40 jornadas completas al año, recuperadas de un solo proceso. El 70% es la parte
+                  del seguimiento comercial que puede dejar de hacerse a mano; el resto sigue
+                  necesitando a alguien que hable con el cliente.
+                </p>
+
                 <h3 style={{ fontSize: "24px", marginBottom: "14px" }}>Por qué no todo es automatizable</h3>
                 <p style={{ fontSize: "15px", lineHeight: "1.65", color: "var(--ink-2)", marginBottom: "24px" }}>
                   Un informe mensual se monta solo: los datos están en sistemas y las reglas no
@@ -179,6 +226,30 @@ export default function CalculadoraAutomatizacion() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="svc-section faq" style={{ background: "var(--bg-2)" }}>
+          <div className="wrap">
+            <div className="faq-grid">
+              <div className="sticky-info">
+                <span className="eyebrow">Preguntas frecuentes</span>
+                <h2 style={{ marginTop: "20px" }}>Lo que nos<br />suelen <span className="serif">preguntar.</span></h2>
+                <p style={{ marginTop: "20px", fontSize: "15px", color: "var(--ink-2)", lineHeight: "1.55" }}>
+                  ¿No encuentras tu pregunta?{" "}
+                  <Link href="/contacto" style={{ color: "var(--ink)", textDecoration: "underline" }}>Escríbenos directamente.</Link>
+                </p>
+              </div>
+              <div className="faq-list">
+                {faqs.map((faq) => (
+                  <details key={faq.q}>
+                    <summary>{faq.q}</summary>
+                    <p>{faq.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ENLACE A LA GUÍA */}
         <section className="svc-section" style={{ background: "var(--bg)", padding: "64px 0" }}>
           <div className="wrap">
@@ -220,6 +291,7 @@ export default function CalculadoraAutomatizacion() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </>
   );
 }

@@ -27,6 +27,8 @@ export default function AnalyticsEvents() {
         track("whatsapp_click", { origen: pathname });
       } else if (href === "/contacto" || href.startsWith("/contacto?") || href.startsWith("/contacto#")) {
         track("cta_contacto", { origen: pathname, etiqueta });
+      } else if (href.includes("/servicios#auditoria")) {
+        track("cta_diagnostico", { origen: pathname, etiqueta });
       } else if (href.startsWith("tel:")) {
         track("telefono_click", { origen: pathname });
       } else if (href.startsWith("mailto:")) {

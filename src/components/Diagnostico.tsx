@@ -20,6 +20,7 @@ export default function Diagnostico() {
   const [horas, setHoras] = useState<Record<string, number>>({});
   const [coste, setCoste] = useState(COSTE_HORA_DEFECTO);
   const [calculado, setCalculado] = useState(false);
+  const [empezado, setEmpezado] = useState(false);
 
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -30,6 +31,12 @@ export default function Diagnostico() {
   const totalSemana = Object.values(horas).reduce((t, h) => t + (Number(h) || 0), 0);
 
   function fijarHoras(id: string, valor: string) {
+    // Mide cuánta gente empieza y no termina: la diferencia con
+    // diagnostico_calculado es la tasa de abandono del formulario.
+    if (!empezado) {
+      setEmpezado(true);
+      track("diagnostico_empezado");
+    }
     const n = Math.min(60, Math.max(0, Number(valor) || 0));
     setHoras((prev) => ({ ...prev, [id]: n }));
   }
